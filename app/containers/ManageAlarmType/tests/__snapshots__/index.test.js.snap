@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< ManageAlarmType /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ManageAlarmType
+    </title>
+    <meta
+      content="Description of ManageAlarmType"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Manage Alarms"
+          id="app.common.messages.manageAlarms"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="All Available Alarm Type"
+          id="app.containers.ManageAlarmType.allAvailableAlarmType"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30"
+    />
+  </div>
+  <div
+    className="contentForm addAlarm"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header"
+      >
+        <form
+          className="flex"
+          onSubmit={[Function]}
+        >
+          <div
+            className="fx-b50"
+          >
+            <div
+              className="createAlarm"
+            >
+              <p
+                className="categoryErrorMessage"
+              />
+              <p
+                className="categoryErrorMessage"
+              />
+              <p
+                className="categoryErrorMessage"
+              />
+              <div
+                className="dropdown selectAlarmCategory"
+              >
+                <button
+                  className="btn dropdown-toggle"
+                  data-toggle="dropdown"
+                  type="button"
+                >
+                  <span
+                    className="typeIcon"
+                  >
+                    <img
+                      src="IMAGE_MOCK"
+                    />
+                  </span>
+                  <FormattedMessage
+                    defaultMessage="Select Category"
+                    id="app.containers.ManageAlarmType.selectCategory"
+                    values={Object {}}
+                  >
+                    <Component />
+                  </FormattedMessage>
+                </button>
+                <ul
+                  className="dropdown-menu"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <input
+                  className="form-control"
+                  placeholder="Enter Alarm Name"
+                />
+              </div>
+              <button
+                className="btn btn-transparent"
+                type="submit"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-check"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="fx-b50"
+          />
+        </form>
+      </div>
+      <SkeletonLoader
+        skeleton="skeletonAlarmType"
+      />
+    </div>
+    <div
+      className="form-group justify-content-end mt-3"
+    >
+      <button
+        className="btn btn-danger"
+        id="saveAlarmType"
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="far fa-check-circle"
+        />
+        <FormattedMessage
+          defaultMessage="Save"
+          id="app.common.messages.save"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </button>
+    </div>
+  </div>
+</div>
+`;

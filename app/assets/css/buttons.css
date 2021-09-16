@@ -1,0 +1,550 @@
+@media only screen {
+    button:hover, button:focus {
+        box-shadow: none;
+        outline: none !important;
+    }
+    button:disabled {
+        opacity: .5 !important;
+        cursor: not-allowed !important;
+    }
+    .button-group{
+        position: relative;
+    }
+    .button-group button {
+        margin: 0 7px 0 0;
+    }
+    .button-group button:last-child {
+        margin: 0;
+    }
+    .btn {
+        position: relative;
+        font-size: 14px;
+    }
+    .btn-transparent {
+        padding: 0 5px;
+        background-color: transparent;
+        position: relative;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        border-radius: 6px !important;
+    }
+    .btn-transparent i {
+        font-size: 16px;
+    }
+    .btn-transparent:hover {
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+        transform: translateY(-1px);
+        box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+    .btn-transparent sup {
+        position: absolute;
+        top: -8px;
+        left: calc(100% - 6px);
+        margin: 0;
+    }
+    .btn-danger {
+        border-radius: 35px;
+        padding: 10px 20px;
+        background-color: var(--secondaryColor);
+        border: 2px solid var(--secondaryColor);
+        color: var(--labelColor);
+        transition: all ease-in-out 0.4s;
+    }
+    .btn-danger:hover {
+        border-color: var(--secondaryColor);
+        background-color: #ffffff;
+        color: var(--secondaryColor);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        transition: all ease-in-out 0.4s;
+        transform: translateX(2px);
+    }
+    .btn-create {
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        position: relative;
+        font-size: 23px;
+        background-color: var(--secondaryColor);
+        border: 2px solid var(--secondaryColor);
+        color: var(--labelColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.02);
+        transition: all ease-in-out 0.4s;
+    }
+    .btn-create:hover {
+        border-color: var(--secondaryColor);
+        background-color: #ffffff;
+        color: var(--secondaryColor);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        transition: all ease-in-out 0.4s;
+        transform: translateY(-2px);
+    }
+    .btn-create i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-danger i, .btn-secondary i {
+        margin-right: 7px;
+    }
+    .btn-secondary {
+        border-radius: 35px;
+        padding: 10px 20px;
+        background-color: #6c757d;
+        border: 2px solid #6c757d;
+        color: var(--white);
+        transition: all ease-in-out 0.4s;
+    }
+    .btn-secondary:hover {
+        border-color: #6c757d;
+        background-color: #ffffff;
+        color: #6c757d;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        transition: all ease-in-out 0.4s;
+        transform: translateX(2px);
+    }
+    .btn-list {
+        position: relative;
+        padding: 4px 12px;
+        color: var(--textColor);
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 2px solid var(--borderDarkColor);
+        transition: all .4s ease;
+    }
+    .btn-list:hover {
+        transition: all .4s ease;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
+    }
+    .btn-list i {
+        color: var(--textColor);
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid var(--borderDarkColor);
+    }
+    .btn-link {
+        padding: 0;
+        text-transform: capitalize;
+        border: 0;
+        line-height: normal;
+        cursor: pointer;
+    }
+    .btn-link i {
+        margin-right: 5px;
+    }
+    .toggleButton {
+        display: inline-block;
+        background-color: var(--white);
+        border-radius: 30px;
+        padding: 4px;
+        border: 2px solid var(--borderColor);
+        line-height: 1.2;
+    }
+    .toggleButton .btn-toggle {
+        position: relative;
+        padding: 8px 12px;
+        text-transform: capitalize;
+        color: var(--textColor);
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 900;
+        z-index: 1;
+    }
+    .toggleButton .btn-toggle.active {
+        background: var(--secondaryColor);
+        color: var(--labelColor);
+        transition: all .4s ease;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-slide {
+        position: relative;
+        margin: 0;
+    }
+    .btn-slide input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-slide .slider {
+        display: block;
+        position: relative;
+        padding: 7px 12px 7px 32px;
+        color: var(--contentColor);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: capitalize;
+        background-color: #f2f2f2;
+        border: 2px solid var(--borderDarkColor);
+        border-radius: 34px;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+    }
+    .btn-slide .slider:before {
+        content: "\292B";
+        position: absolute;
+        height: 23px;
+        width: 23px;
+        left: 4px;
+        top: 50%;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: var(--contentColor);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        text-align: center;
+        transition: all .4s ease-in-out;
+    }
+    .btn-slide input[type="checkbox"]:checked+.slider {
+        background-color: #ffe6e6;
+        border-color: var(--secondaryColor);
+        color: var(--secondaryColor);
+        padding: 7px 32px 7px 12px;
+        transition: all .4s ease-in-out;
+    }
+    .btn-slide input:checked+.slider:before {
+        left: unset;
+        right: 4px;
+        background-color: var(--secondaryColor);
+        content: "\2713";
+        color: white;
+        transition: all .4s ease-in-out;
+    }
+    .btn-viewPipelineBox {
+        position: relative;
+        display: inline-block;
+    }
+    .btn-viewPipelineBox .btnLayout {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 4px;
+        background-color: var(--primaryColor);
+        opacity: 0.8;
+    }
+    .btn-viewPipeline {
+        position: relative;
+        padding: 8px 10px;
+        border-radius: 4px;
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 500;
+        z-index: 1;
+    }
+    /* fixed button css start */
+    .btn-fixed-group {
+        position: fixed;
+        right: 24px;
+        bottom: 110px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-end;
+    }
+    .btn-fixed-group .btn-fixed {
+        position: relative;
+        border: 2px solid var(--secondaryColor);
+        border-radius: 45px;
+        width: 45px;
+        height: 45px;
+        max-width: 45px;
+        background-color: var(--white);
+        color: var(--secondaryColor);
+        font-size: 14px;
+        transition: all .4s linear;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .btn-fixed-group .btn-fixed:last-child {
+        margin-bottom: 0;
+    }
+    .btn-fixed i {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
+    }
+    .btn-fixed-group .btn-fixed:hover {
+        background-color: var(--secondaryColor);
+        color: white;
+        width: auto;
+        max-width: 500px;
+        transition: all .4s linear;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, .1);
+    }
+    .btn-fixed .btn-fixed-text {
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 30px;
+    }
+    .btn-fixed input, .btn-create input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    ::-webkit-file-upload-button {
+         cursor:pointer; 
+    }
+    /* fixed button css end  */
+    .btn-expand {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 0px;
+        z-index: 2;
+    }
+    .btn-compress {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        margin-right: 0px;
+        z-index: 2;
+    }
+    .btn-addConfig {
+        height: 25px;
+        width: 25px;
+        padding: 0;
+        text-align: center;
+        border-radius: 50%;
+        /* border: 2px dashed var(--secondaryColor); */
+        background-color: var(--white);
+        color: var(--secondaryColor);
+        color: var(--textColor);
+        font-size: 12px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        transition: all .4s ease;
+    }
+    .btn-addConfig sub {
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        bottom: -14px;
+        right: -4px;
+        background-color: var(--white);
+        border-radius: 50%;
+        border: 2px solid var(--secondaryColor);
+        background-color: var(--secondaryColor);
+        font-size: 9px;
+        /* background-color: var(--white); */
+        color: white;
+        line-height: 14px;
+    }
+    .btn-addConfig:hover {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+        transition: all .4s ease;
+    }
+    .btn-addConfig:hover sub {
+        background-color: var(--white);
+        color: var(--secondaryColor);
+        transition: all .4s ease;
+    }
+
+    /* settings page reverse gradient checkbox css start */
+    .reverseGradient{
+        position: relative;
+        display: inline-block;
+    }
+    .reverseGradient .btn-addConfig sub{
+        background-color: transparent;
+        border: 0;
+    }
+    .reverseGradient .btn-addConfig .customCheckbox{
+        padding: 0;
+    }
+    .reverseGradient .btn-addConfig .customCheckbox .checkmark{
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    }
+    .reverseGradient .btn-addConfig .customCheckbox .checkmark::after{
+        font-size: 11px;
+    }
+    .reverseGradient .btn-addConfig .customCheckbox input[type="checkbox"]:checked~.checkmark{
+        border: 2px solid var(--secondaryColor);
+    }
+    .btn-addConfig i{
+        transition: .4s all ease;
+    }
+    .btn-addConfig .reverseTransition{
+        transform: rotate(180deg);
+    }
+  /* settings page reverse gradient checkbox css end */
+
+    .btn-compass {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        padding: 1px;
+        background-image: url('../images/circle.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all ease .4s;
+    }
+    .btn-compass:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all ease .4s;
+    }
+    .btn-compass img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: rotate(0deg);
+    }
+    .btn-compass img.rotateClock {
+        transform: rotate(-45deg);
+        transition: all 3s linear;
+    }
+    .btn-compass img.rotateAntiClock {
+        transform: rotate(135deg);
+        transition: all 3s linear;
+    }
+    /* switch label */
+    .switchButtonLabel {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    .switchButtonLabel .switchLabelText {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0 8px 0 0;
+        color: var(--contentColor);
+    }
+    .switchLabel {
+        display: inline-block;
+        position: relative;
+        border-radius: 15px;
+        width: 45px;
+        height: 21px;
+        cursor: pointer;
+        margin: 0;
+    }
+    .switchLabel input {
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .switchLabel .switchMark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid var(--borderColor);
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        transition: transform 300ms ease;
+    }
+    .switchLabel .switchMark::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        height: 15px;
+        width: 15px;
+        border: 5px solid var(--contentColor);
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 300ms ease;
+    }
+    .switchLabel input:checked~.switchMark {
+        background-color: #ffe6e6;
+        border-color: var(--secondaryColor);
+    }
+    .switchLabel input:checked~.switchMark::before {
+        transform: translate(21px, -50%);
+        background-color: var(--white);
+        border: 5px solid var(--secondaryColor);
+        transition: transform 300ms ease;
+    }
+    /* End switch label */
+    .btn-collapse {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        transition: all .4s ease;
+    }
+    .btn-collapse i {
+        transition: all .4s ease;
+        color: var(--textColor);
+        font-size: 16px;
+    }
+    .btn-language {
+        padding: 15px 15px 15px 40px;
+        color: var(--navigationMenuTextHover);
+    }
+    .btn-language:hover {
+        color: var(--navigationMenuTextHover);
+    }
+    .btn-language img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+    }
+    .btn-language i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2px;
+    }
+    .btn-pipelineList {
+        display: none;
+    }
+    .btn-pipelineClose {
+        display: none;
+    }
+    @media only screen and (max-width: 640px) {
+        .btn-pipelineList {
+            position: fixed;
+            left: 6px;
+            display: inline-block;
+            padding: 0 !important;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            font-size: 13px;
+            line-height: 14px;
+            text-align: center;
+            background-color: var(--secondaryColor);
+            color: #ffffff !important;
+            z-index: 2;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .expandBox .btn-pipelineList {
+            display: none;
+        }
+        .btn-pipelineClose {
+            display: inline-block;
+            background-color: var(--secondaryColor);
+            color: var(--white);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            padding: 0px 4px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddOrEditGroup /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      AddOrEditGroup
+    </title>
+    <meta
+      content="Description of AddOrEditGroup"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage Groups"
+            id="app.containers.AddOrEditGroup.title"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Create Group"
+          id="app.containers.AddOrEditGroup.titleCreateGroup"
+          values={Object {}}
+        />
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right"
+    />
+  </div>
+  <form
+    className="contentForm"
+    onSubmit={[Function]}
+  >
+    <h5
+      className="formHeader"
+    >
+      <FormattedMessage
+        defaultMessage="Create Group"
+        id="app.containers.AddOrEditGroup.headingAdd"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </h5>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Group Name"
+          id="app.containers.AddOrEditGroup.formName"
+          values={Object {}}
+        />
+         :
+        <sup>
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+      </label>
+      <input
+        autoFocus={true}
+        className="form-control"
+        disabled={false}
+        id="name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Group Description"
+          id="app.containers.AddOrEditGroup.formDescription"
+          values={Object {}}
+        />
+         :
+      </label>
+      <textarea
+        className="form-control"
+        id="description"
+        onChange={[Function]}
+        rows="4"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group justify-content-end mt-3"
+    >
+      <button
+        className="btn btn-danger"
+        id="saveGroup"
+      >
+        <i
+          className="far fa-check-circle"
+        />
+        <FormattedMessage
+          defaultMessage="Save"
+          id="app.common.messages.save"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </button>
+    </div>
+  </form>
+</div>
+`;

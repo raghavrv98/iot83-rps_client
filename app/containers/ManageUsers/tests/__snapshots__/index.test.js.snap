@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ManageUsers /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ManageUsers
+    </title>
+    <meta
+      content="Description of ManageUsers"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Identity Access Management"
+          id="app.common.messages.iam"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="All Available Users"
+          id="app.containers.ManageUsers.title"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="skeletonReactTable"
+  />
+</div>
+`;

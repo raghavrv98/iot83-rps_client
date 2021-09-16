@@ -1,0 +1,30 @@
+image: node:lts
+
+stages:
+    - build
+    - upload
+    
+build:
+    stage: build
+    artifacts:
+        paths:
+            - pmmpUi.tar.gz
+    script:
+        - npm install
+        - npm run test
+        - npm run build
+        - tar -cvzf pmmpUi.tar.gz build/*
+    
+
+upload:
+    stage: upload
+    image:
+        name: banst/awscli
+        entrypoint: [""]
+    only:
+        - triggers
+    script:
+        - aws configure set region us-east-1
+        - aws s3 cp pmmpUi.tar.gz s3://${S3_BUCKET}/rps-${CI_COMMIT_REF_NAME}/release/pmmpUi.tar.gz 
+
+    

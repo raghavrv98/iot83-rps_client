@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< ManagePlant /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ManagePlant
+    </title>
+    <meta
+      content="Description of ManagePlant"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Manage Plants"
+          id="app.common.messages.managePlant"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="All Available Plants"
+          id="app.containers.ManagePlant.title"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+         
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="cardSkeleton"
+  />
+</div>
+`;

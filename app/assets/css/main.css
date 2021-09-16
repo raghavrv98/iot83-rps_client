@@ -1,0 +1,2383 @@
+@media only screen {
+    .appContent {
+        padding: 150px 20px 50px;
+        background-color: transparent;
+    }
+    .contentBox {
+        padding: 15px;
+    }
+    /* DashBoard View Start */
+    .pipelineTopologyBox {
+        position: relative;
+        text-align: center;
+        padding: 10px 10px 0;
+    }
+    .card.pipeLineViewBox {
+        padding: 10px;
+        border: 0;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        height: 100%;
+        z-index: 0;
+    }
+    .pipeLineViewBox .card-header {
+        position: relative;
+        background-color: transparent;
+        text-align: center;
+        font-size: 15px;
+        color: var(--secondaryColor);
+        border: 0;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .timeLocationStatus{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .timeLocationStatus .form-control{
+        width: 110px;
+        margin-left: 10px;
+    }
+    .timeLocationStatus .form-control:focus{
+        border-color: var(--borderColor) !important;
+        box-shadow: none;
+    }
+    .timeLocationStatus .form-control:hover{
+        border-color: var(--borderDarkColor);
+    }
+    .timeStatus {
+        margin: 0;
+        font-size: 12px;
+        color: var(--textColor);
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0.03em;
+        position: relative;
+    }
+    .timeStatus strong {
+        position: relative;
+        margin: 0 4px 0 0;
+        color: var(--contentColor);
+        padding-right: 8px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .timeStatus strong::after {
+        content: ":";
+        position: absolute;
+        right: 0;
+    }
+    .timeStatusOuter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .timeStatusOuter .form-group{
+        margin: 0;
+    }
+    .pipeLineViewBox .card-header .timeStatus {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+    .pipeLineViewBox .card-header .toggleButton {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .pipeLineViewBox .card-header .form-group {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        padding-left: 100px;
+        min-width: 300px;
+    }
+    .pipeLineViewBox .card-header .form-group .form-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--textColor);
+    }
+    .pipelineTopologyBoxLoader {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .pipelineTopologyBoxLoader i {
+        color: var(--secondaryColor);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .chartBox {
+        position: relative;
+        height: 100%;
+    }
+    .chartBox>div {
+        height: 100%;
+    }
+    /* DashBoard View End */
+    /* Operator DashBoard Starts */
+    .pipeLineViewBox .card-body.pipelineViewBody {
+        position: relative;
+        padding: 10px;
+    }
+    .operatorDashBoard .card-body.pipelineNavBody {
+        height: 185px;
+    }
+    .pipeLineViewBox .card-body.pipelineViewBody .schematicView {
+        height: 165px;
+    }
+    .operatorDashBoard .pipelineTopologyBox {
+        min-height: 300px;
+        z-index: -1;
+    }
+    .pipelineColorScaleBox {
+        position: relative;
+        width: 50%;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .pipelineColorScaleBox h6 {
+        color: var(--secondaryColor);
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .pipelineColor {
+        background: linear-gradient(to right, red 5%, #ff0 40%, lime 60%, cyan 75%, cornflowerBlue 85%);
+        height: 13px;
+        width: 50%;
+        margin: 4px auto 0;
+        border-radius: 10px;
+    }
+    ul.pipelineColorScale {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+    ul.pipelineColorScale li {
+        display: inline-block;
+        width: 10%;
+        position: relative;
+    }
+    ul.pipelineColorScale li::before {
+        content: "";
+        width: 2px;
+        height: 15px;
+        background-color: #a9a9a9;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    ul.pipelineColorScale li p {
+        font-size: 12px;
+        margin: 3px 0;
+        color: var(--contentColor);
+    }
+    .operatorDashBoard .parameterTrending {
+        min-height: 420px;
+    }
+    .parameterTrending .parameterTrendingInfo {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid var(--borderColor);
+    }
+    .parameterTrendingInfo>li {
+        position: relative;
+        flex-basis: 25%;
+        max-width: 25%;
+        text-align: center;
+        padding: 0 10px 10px 10px;
+        border-right: 1px solid var(--borderColor);
+    }
+    .parameterTrendingInfo>li:last-child {
+        border: none;
+    }
+    .parameterTrendingInfo li h6 {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0px;
+        margin-bottom: 12px;
+        color: var(--contentColor);
+    }
+    .parameterTrendingInfo li p {
+        position: relative;
+        margin: 0;
+        padding: 0px 25px 0 10px;
+        font-size: 13px;
+        color: var(--textColor);
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
+    .parameterTrendingInfo li p.noEllipsis {
+        white-space: unset;
+        text-overflow: unset;
+        overflow: unset;
+        padding: 0px;
+    }
+    .parameterTrendingInfo li .componentsDropdown {
+        position: unset;
+    }
+    .parameterTrendingInfo li .componentsDropdown .dropdown-menu {
+        padding: 10px;
+    }
+    .parameterTrendingInfo li .componentsDropdown .dropdown-menu h5 {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--textColor);
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .parameterTrendingInfo li .componentsDropdown .dropdown-menu ul li {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--contentColor);
+        margin-bottom: 5px;
+    }
+    .parameterTrendingInfo li .componentsDropdown .dropdown-menu ul li:last-child {
+        margin-bottom: 0;
+    }
+    .parameterTrendingInfo li .countBadge {
+        display: inline-block;
+        font-size: 9px;
+        font-weight: 600;
+        padding: 1px 4px 1px 8px;
+        position: absolute;
+        bottom: -1px;
+        right: 5px;
+        transform: translateY(-50%);
+        background-color: var(--white);
+        color: var(--textColor);
+        border-radius: 4px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--textColor);
+        cursor: pointer;
+        transition: all .4s linear;
+        min-width: 24px;
+        text-align: center;
+    }
+    .parameterTrendingInfo li .countBadge:hover {
+        color: var(--secondaryColor);
+        border-color: var(--secondaryColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all .4s linear;
+    }
+    .parameterTrendingInfo li .countBadge sub {
+        position: absolute;
+        top: 50%;
+        left: -1px;
+        transform: translate(-50%, -50%);
+        background-color: var(--white);
+        color: var(--textColor);
+        border: 1px solid var(--textColor);
+        height: 12px;
+        width: 12px;
+        font-size: 7px;
+        border-radius: 50%;
+    }
+    .parameterTrendingInfo li .countBadge sub i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .parameterTrendingInfo li .countBadge:hover sub {
+        color: var(--secondaryColor);
+        border-color: var(--secondaryColor);
+        transition: all linear .4s;
+    }
+    .parameterTrendingModal {
+        position: relative;
+        min-height: 530px;
+    }
+    .card.pipeLineViewBox .card-header .btnGroup {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .attributeFilterBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .attributeFilterBox .pipelineAttribute {
+        margin-right: 5px;
+        padding: 10px;
+    }
+    .attributeFilterBox .pipelineAttribute:last-child {
+        margin-right: 0px;
+    }
+    .attributeLabel {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        padding-left: 30px;
+        margin: 0;
+        text-align: left;
+    }
+    .attributeLabel .attributeLabelText {
+        color: var(--black);
+        font-size: 12px;
+        display: inline-block;
+        text-decoration: line-through;
+    }
+    .attributeLabel input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        display: none;
+    }
+    .attributeLabel .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+        border-radius: 50%;
+        border: 2px solid var(--borderColor);
+        text-transform: capitalize;
+    }
+    .attributeLabel .checkmark::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .attributeLabel .checkmark img {
+        height: 12px;
+        width: 12px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .attributeLabel input[type="checkbox"]:checked~.attributeLabelText {
+        text-decoration: none;
+    }
+    .attributeLabel input[type="checkbox"]:checked~.checkmark {
+        background-color: var(--white);
+        border-color: var(--secondaryColor);
+    }
+    .attributeLabel input[type="checkbox"]:checked~.checkmark::before {
+        display: none;
+    }
+    .legendsDropdown .dropdown-menu {
+        left: calc(100% + 5px) !important;
+        bottom: 0 !important;
+        top: unset !important;
+        max-height: 185px;
+        overflow-y: auto;
+        transform: unset !important;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .legendsDropdown .dropdown-menu:hover {
+        display: block;
+    }
+    .legendsDropdown .attributeFilterBox {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: unset;
+        flex-wrap: unset;
+        margin: 0;
+    }
+    .legendsDropdown .btn-transparent {
+        background-color: var(--secondaryColor);
+        color: #ffffff;
+        border-radius: 50% !important;
+        height: 26px;
+        width: 26px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .detailViewFooter{
+        position: relative;
+        padding: 0 10px;
+    }
+
+    .detailViewFooter .btn-compass {
+        position: absolute;
+        bottom: 35px;
+        right: 0;
+    }
+    /* Operator DashBoard End */
+    /* Commissioner Dashboard Start */
+    .commissionerDashboard {
+        padding-right: 400px;
+    }
+    .commissionerChartBox {
+        position: relative;
+        min-height: calc(100vh - 195px);
+    }
+    .commissionerChartLoaderBox {
+        background-color: var(--white);
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .commissionerDashboard .pipelineTopologyBox {
+        min-height: 300px;
+        border: 2px dashed var(--borderColor);
+    }
+    .commissionerDashboard .pipelineFilterBox {
+        position: fixed;
+        top: 140px;
+        right: 20px;
+        width: 360px;
+    }
+    .commissionerDashboard .pipelineFilterBox .card-body.pipelineNavBody {
+        height: calc(100vh - 259px);
+    }
+    /* Commissioner Dashboard End */
+    /* Add Edit Page Form CSS Start */
+    .contentForm {
+        width: 95%;
+        margin: 0 auto;
+        padding: 40px 60px;
+        background-color: var(--white);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .contentForm .formHeader {
+        position: relative;
+        text-align: center;
+        color: var(--secondaryColor);
+        margin: 0 0 20px;
+        font-weight: 700;
+    }
+    .contentForm .formHeader .btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .contentForm .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contentForm .form-group sup i {
+        font-size: 8px;
+        margin-left: 5px;
+        color: #ff0000;
+    }
+    .contentForm .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .contentForm .form-group .form-label {
+        flex: 0 0 20%;
+        max-width: 20%;
+        display: block;
+        text-align: right;
+        padding: 10px 20px 0 0;
+        color: var(--contentColor);
+        font-size: 0.96em;
+    }
+    .contentForm .form-group .form-control {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: var(--textColor);
+        border: 0.086em solid var(--borderColor);
+    }
+    .contentForm .form-group .form-control:hover {
+        border-color: var(--contentColor);
+    }
+    .contentForm .form-group .form-control:focus {
+        box-shadow: none;
+    }
+    .contentForm .form-group select.form-control {
+        padding: 0 20px;
+        height: 43px;
+        cursor: pointer;
+    }
+    .inputErrorMsg {
+        position: absolute;
+        bottom: -15px;
+        left: calc(20% + 10px);
+        color: var(--secondaryColor);
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .contentForm .form-group .modBusErrorMsg {
+        position: relative;
+        margin: 5px 0 0;
+        color: var(--secondaryColor);
+        font-size: 12px;
+        font-weight: 500;
+    }
+    /* Add Edit Page Form CSS End */
+    /* List View Start */
+    .appListView {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .appListView li {
+        position: relative;
+        margin: 0px 0px 15px 0px;
+        padding: 0 0 0 3px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all .4s ease;
+    }
+    .appListView li:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all ease 300ms;
+    }
+    .appListView li:last-child {
+        margin-bottom: 0;
+    }
+    .appListView li::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 3px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px 0 0 4px;
+        background-color: var(--borderDarkColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .appListView .listIcon {
+        flex: 0;
+        padding: 15px;
+    }
+    .appListView .listIcon .contentIcon {
+        position: relative;
+        margin: 0 25px 0 15px;
+    }
+    .appListView .listIcon .contentIcon i {
+        color: #4a4a4a;
+        font-size: 36px;
+        position: relative;
+        opacity: 0.9;
+    }
+    .appListView .listIcon .contentIcon sub {
+        font-size: 10px;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+    }
+    .appListView .listIcon .contentIcon sub::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: inline-block;
+        background-color: var(--secondaryColor);
+        opacity: 0.9;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .appListView .listIcon .contentIcon sub h6 {
+        position: relative;
+        margin: 0;
+        color: var(--white);
+        letter-spacing: 0.06em;
+        text-align: center;
+        line-height: 22px;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    .appListView .listContent {
+        flex: 1;
+        padding: 15px;
+    }
+    .appListView .listContent h6 {
+        font-size: 12px;
+        color: var(--contentColor);
+        font-weight: 400;
+        margin: 0 0 10px;
+    }
+    .appListView .listContent p {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--textColor);
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .appListView .listContent a:hover{
+        color: var(--textColor);
+        text-decoration: none;
+    }
+    .listContent h6 .customCountBadge{
+        font-size: 12px;
+    }
+    /* List View End */
+    /* Plant List Start */
+    .plantList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .plantList li {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .plantList .card {
+        background-color: var(--white);
+        border-radius: 6px;
+        margin: 0 10px 20px;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all .4s ease;
+    }
+    .plantList .card:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all .4s ease;
+    }
+    .plantList .card .card-header {
+        position: relative;
+        padding: 0;
+        height: 210px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px 6px 0 0;
+        border: 0;
+    }
+    .plantList .customPlantHeader {
+        position: relative;
+        padding: 12px 10px 8px;
+        border-radius: 6px 6px 0 0;
+    }
+    .plantList .customPlantHeader .headerLayout {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--primaryColor);
+        opacity: 0.8;
+        border-radius: 6px 6px 0 0;
+    }
+    .plantList .customPlantHeader .headerContent div {
+        z-index: 1;
+    }
+    .plantList .customPlantHeader .headerContent .plantTitle {
+        color: var(--white);
+        font-size: 14px;
+        margin: 0;
+    }
+    .plantList .card .card-header .btn-viewPipelineBox {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+    .plantList .card-body {
+        padding: 10px;
+    }
+    .plantList .card-body h6 {
+        position: relative;
+        font-size: 13px;
+        margin: 0;
+        font-weight: 500;
+        padding: 6px 10px;
+    }
+    .plantList .card-body h6::after {
+        content: ":";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .plantList .card-body p {
+        font-size: 13px;
+        margin: 0;
+        font-weight: 500;
+        padding: 6px 10px;
+    }
+    /* Plant List End */
+    /* Grid Layout Start */
+    .navGridBody {
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        border-radius: 4px;
+    }
+    .navGridBox.form-group {
+        margin: 0;
+        padding: 0 15px;
+    }
+    .navGridBox.form-group .form-control {
+        padding: 5px 20px;
+        font-size: 0.96em;
+        color: var(--contentColor);
+        border: .1em solid var(--borderColor);
+        height: auto;
+        border-radius: 3px;
+        line-height: normal;
+    }
+    .navGridBox.form-group p {
+        margin: 0;
+        font-size: 13px;
+    }
+    .navGridBox.form-group .label-block {
+        margin-top: 7px!important;
+    }
+    .navChildGrid {
+        margin-top: -9px;
+        background-color: var(--white);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+    /* Grid Layout End */
+    /* Manage Permission Start */
+    .permissionTable.table thead tr th, .permissionTable tbody tr td {
+        text-align: center;
+    }
+    .permissionTable thead tr th:first-child, .permissionTable tbody tr td:first-child {
+        text-align: left;
+    }
+    /* Manage Permission End */
+    /* Alarms And Alerts Start */
+    .alarmFilterBox.filterBox {
+        position: sticky;
+        top: 124px;
+        z-index: 1;
+    }
+    .customInfiniteScroll {
+        padding: 5px;
+    }
+    .alarmsAndAlertsList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .alarmsAndAlertsList li {
+        position: relative;
+        padding: 15px 200px 15px 80px;
+        border-radius: 4px;
+        background-color: var(--white);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all ease 400ms;
+        margin-bottom: 15px;
+    }
+    .alarmsAndAlertsList li:last-child {
+        margin-bottom: 15px;
+    }
+    .alarmsAndAlertsList li:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all ease 400ms;
+    }
+    .alarmsAndAlertsList li::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 3px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px 0 0 4px;
+        background-color: var(--borderDarkColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .alarmsAndAlertsList li.raised::before {
+        background-color: #dc3545;
+    }
+    .alarmsAndAlertsList li.acknowledged::before {
+        background-color: #ffc107;
+    }
+    .alarmsAndAlertsList li.addressed::before {
+        background-color: #28a745;
+    }
+    .alarmsAndAlertsList .alertIcon {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        top: 8px;
+        left: 8px;
+    }
+    .alarmsAndAlertsList .alertIcon img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        opacity: .9;
+    }
+    /* .raised {
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 2px solid #f5c6cb;
+    }
+    .acknowledged {
+        background-color: #fff3cd;
+        color: #856404;
+        border: 2px solid #ffeeba;
+    }
+    .addressed {
+        background-color: #d4edda;
+        color: #155724;
+        border: 2px solid #c3e6cb;
+    } */
+    .alarmsAndAlertsList .title {
+        font-size: 13px;
+        color: var(--contentColor);
+        font-weight: 500;
+    }
+    .alarmsAndAlertsList .content {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--textColor);
+        letter-spacing: .01em;
+    }
+    .alarmsAndAlertsList li .button-group {
+        position: absolute;
+        right: 6px;
+        top: 15px;
+    }
+    .alarmsAndAlertsList li .button-group .btn-transparent {
+        font-size: 13px;
+        color: var(--contentColor);
+        font-weight: 500;
+    }
+    .alarmsAndAlertsList li .button-group .btn-transparent>span {
+        display: block;
+        margin-top: 6px;
+    }
+
+    /* alarm ancestor modal css start  */
+    .modalMinHeight{
+        min-height: 500px;
+    }
+    .alarmLinking{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .alarmLinking::before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        right: -20px;
+        display: block;
+        border-bottom: 1px solid var(--borderColor);
+    }
+    .alarmLinking .nav-item{
+        position: relative;
+        padding-right: 15px;
+        margin-right: 10px;
+        font-size: 12px;
+        color: var(--contentColor);
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .alarmLinking .nav-item::after{
+        content: "\00BB";
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .alarmLinking .nav-item:last-child::after{
+        content: none;
+    }
+    .alarmLinking .nav-item:last-child{
+        cursor: default;
+        padding: 0;
+        margin: 0;
+    }
+    .alarmLinking .nav-item.active{
+        color: var(--secondaryColor);
+        font-weight: 600;
+    }
+    .alarmLinking .nav-link{
+        padding: 0;
+        color: inherit;
+    }
+    .alarmLinking .nav-link span, .alarmHistory .nav-link span{
+        margin-left: 6px;
+    }
+    .alarmLinking .nav-item:hover{
+        color: var(--secondaryColor);
+        text-decoration: underline;
+    }
+    .alarmLinking .nav-item:hover::after{
+        text-decoration: none;
+        color: var(--textColor);
+    }
+    .alarmLinking .nav-item:hover:last-child{
+        text-decoration: none;
+    }
+    .alarmDescription{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .alarmDescription h6{
+        font-size: 13px;
+        color: var(--textColor);
+        font-weight: 600;
+        position: relative;
+        padding-right: 15px;
+        margin: 0 10px 0 0;
+    }
+    .alarmDescription h6:last-child{
+        margin: 0;
+        padding: 0;
+    }
+    .alarmDescription h6::after{
+        content: "\007C";
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .alarmDescription h6:last-child::after{
+        content: none;
+    }
+    .alarmDescription h6 strong{
+        font-size: 13px;
+        color: var(--contentColor);
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .alarmTitle{
+        margin: 0 10px 0 0;
+        color: var(--contentColor);
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .alarmHistory{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        margin: 0;
+    }
+    .alarmError{
+        margin: 0 0 0 0;
+        color: var(--textColor);
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .alarmHistory li{
+        margin: 0 5px;
+        padding-right: 5px;
+        position: relative;
+        font-size: 13px;
+        color: var(--primary);
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .alarmHistory li::after{
+        content: ",";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--textColor);
+    }
+    .alarmHistory li:last-child{
+        padding-right: 0;
+    }
+    .alarmHistory li:last-child::after{
+        content: none;
+    }
+    .alarmHistory .nav-link{
+        padding: 0;
+    }
+    .alarmHistory .nav-link i{
+        margin-right: 8px;
+        font-size: 11px;
+        color: var(--textColor);
+    }
+    .alarmHistory li:hover{
+        color: var(--primary);
+        text-decoration: underline;
+    }
+    /* alarm ancestor modal css end  */
+
+    /* Alarms And Alerts End */
+    /* Manage Roll Navigation Start */
+    .manageRollNavigation {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .manageRollNavigation .customCheckbox {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .manageRollNavigation p {
+        margin: 0;
+        color: var(--textColor);
+        font-size: 13px;
+        margin-bottom: 12px;
+        padding-right: 20px;
+    }
+    .manageRollNavigation p i {
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+    .manageRollNavigation ul {
+        padding: 0 10px;
+        margin: 0;
+        list-style: none;
+    }
+    .manageRollNavigation li {
+        position: relative;
+        background-color: var(--white);
+        padding: 10px 10px 10px 50px;
+        border-radius: 5px;
+        margin-bottom: 8px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .manageRollNavigation li:hover {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Manage Roll Navigation End */
+    /* PipeLine Nav Start */
+    .card-body.pipelineNavBody {
+        position: relative;
+        overflow-y: auto;
+        list-style: none;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .pipelineNavBody .pipelineViewList {
+        list-style: none;
+        padding: 20px 25px 3px;
+        margin: 0;
+    }
+    .pipelineViewList li {
+        position: relative;
+        margin-bottom: 24px;
+        cursor: pointer;
+    }
+    .pipelineViewList .pipelineStructure{
+        padding: 0 15px;
+        margin: 0 auto;
+        height: 20px;
+        line-height: 1px;
+    }
+    .pipelineViewList .pipelineStructure.active {
+        box-shadow: 0px 0px 12px 3px rgba(120, 53, 69, .9);
+        background-color: #a9a9a9;
+    }
+    .pipelineViewList li:last-child {
+        margin-bottom: 0;
+    }
+    .pipelineViewList .pipelineStructure::before, .pipelineViewList .pipelineStructure::after{
+        height: 43px;
+    }
+    /* .pipelineViewList .pipelineStructure.avtive {
+        box-shadow: 0px 0px 12px 3px rgba(120, 53, 69, .9);
+    } */
+    .pipelineViewList .pipelineStructure h6 {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 10px;
+        background-color: #ffc107;
+        color: var(--textColor);
+        border-radius: 3px;
+        margin: 0;
+    }
+    .pipelineNavAlarm {
+        position: absolute;
+        top: -19px;
+        right: 10%;
+        background-color: #dc3545;
+        height: 21px;
+        width: 21px;
+        border-radius: 50%;
+    }
+    .pipelineNavAlarm::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        width: 3px;
+        border-radius: 3px;
+        background-color: var(--textColor);
+    }
+    .pipelineViewList li:nth-child(2n+1) .pipelineNavAlarm {
+        right: 20% !important;
+    }
+    .pipelineViewList li:nth-child(3n+1) .pipelineNavAlarm {
+        right: 30% !important;
+    }
+    .pipelineNavAlarm p {
+        color: var(--white);
+        display: block;
+        line-height: 2;
+        font-size: 10px;
+        font-weight: 900;
+        margin: 0;
+        text-align: center;
+    }
+    /* PipeLine Nav End */
+    /* pipeline List View Start */
+    .pipelineListView {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .pipelineListView .pipelineView {
+        position: relative;
+        padding: 0 70px 0 150px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: 400ms ease;
+    }
+    .pipelineListView .pipelineView:last-child {
+        margin-bottom: 0;
+    }
+    .pipelineListView .pipelineView:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 400ms ease;
+    }
+    .pipelineListView .pipelineView::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 3px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px 0 0 4px;
+        background-color: var(--borderDarkColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .pipelineListView .card-body.pipelineListViewBody {
+        padding: 0;
+    }
+    .pipelineListView .card-body.pipelineListViewBody .schematicView {
+        height: 110px;
+    }
+    .pipelineListView .pipelineInfo {
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% - 10px));
+        left: 0;
+    }
+    .pipelineListView .pipelineStatusChart {
+        position: relative;
+    }
+    .pipelineListView .pipelineStatusChart .statusChartFrame {
+        position: relative;
+        width: 140px;
+        height: 90px;
+        margin: 0 auto;
+    }
+    .pipelineListView .pipelineStatusChart .statusChartFrame>div {
+        height: 100%;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm::before, .pipelineListView .pipelineStatusChart.statusAlarm::after {
+        content: "";
+        position: absolute;
+        border: 4px solid #ff0000;
+        border-radius: 50%;
+        left: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: translateX(-45%) rotate(-45deg);
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm::before {
+        top: 19px;
+        width: 94px;
+        height: 94px;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm::after {
+        top: 32px;
+        width: 74px;
+        height: 72px;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::before, .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::after {
+        content: "";
+        position: absolute;
+        bottom: 21px;
+        width: 18px;
+        border-top: 4px solid #ff0000;
+        border-radius: 4px;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::before {
+        left: 15%;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::after {
+        right: 16%;
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm::before, .pipelineListView .pipelineStatusChart.statusAlarm::after, .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::before, .pipelineListView .pipelineStatusChart.statusAlarm .statusChartFrame::after {
+        animation: alert .6s ease-in-out infinite alternate;
+    }
+    @keyframes alert {
+        0% {
+            opacity: 1;
+        }
+        10% {
+            opacity: .9;
+        }
+        20% {
+            opacity: .8;
+        }
+        30% {
+            opacity: .7;
+        }
+        40% {
+            opacity: .6;
+        }
+        50% {
+            opacity: .5;
+        }
+        60% {
+            opacity: .6;
+        }
+        70% {
+            opacity: .7;
+        }
+        80% {
+            opacity: .8;
+        }
+        90% {
+            opacity: .9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .pipelineListView .pipelineStatusChart.statusAlarm .gaugeAalrm {
+        display: inline-block;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        height: 8px;
+        z-index: 1;
+        width: 8px;
+        border-radius: 50%;
+        animation: gaugeAlarm .6s ease-in-out infinite alternate;
+        box-shadow: 0px 0px 12px 6px rgba(255, 0, 0, 0.3);
+        background-color: #ff0000;
+    }
+    @keyframes gaugeAlarm {
+        0% {
+            opacity: 1;
+        }
+        10% {
+            opacity: .9;
+        }
+        20% {
+            opacity: .8;
+        }
+        30% {
+            opacity: .7;
+        }
+        40% {
+            opacity: .6;
+        }
+        50% {
+            opacity: .5;
+        }
+        60% {
+            opacity: .6;
+        }
+        70% {
+            opacity: .7;
+        }
+        80% {
+            opacity: .8;
+        }
+        90% {
+            opacity: .9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .pipelineListView .pipelineTitle {
+        margin: -10px 0 0 0;
+        color: var(--black);
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .pipelineListView .pipelineName {
+        border-radius: 6px;
+        background-color: #ddd;
+        width: 150px;
+        border: 2px solid var(--borderColor);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        cursor: pointer;
+    }
+    .pipelineListView .pipelineName p {
+        font-size: 13px;
+        padding: 10px 12px;
+        color: var(--textColor);
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 10px 12px;
+    }
+    .pipelineListView .pipelineName.pipelineAlarm p {
+        color: var(--white);
+    }
+    .pipelineListView .pipelineAlarm {
+        animation: alert 4s linear infinite alternate;
+        border-color: transparent;
+    }
+    .pipeLineListViewBox {
+        margin-bottom: 0;
+        border: 0;
+        box-shadow: none;
+        border-radius: 5px;
+        /* cursor: pointer; */
+    }
+    .pipelineListView .action {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .pipelineListView .action .btn-create {
+        color: var(--secondaryColor);
+        border-color: var(--secondaryColor);
+        background-color: var(--white);
+    }
+    .pipelineListView .action .btn-create:hover {
+        background-color: var(--secondaryColor);
+        color: var(--labelColor);
+    }
+    .pipelineDetailPage {
+        display: block;
+        padding: 10px 15px;
+        width: 351px;
+        position: fixed;
+        top: 226px;
+        bottom: 39px;
+        right: -351px;
+        z-index: 2;
+        border-radius: 6px 0 0 6px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 2px solid var(--borderColor);
+        border-right: none;
+        box-shadow: -4px 0 4px rgba(0, 0, 0, 0.1);
+    }
+    .pipelineDetailPage.mappingDetail{
+        background-color: var(--white);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        overflow-y: auto;
+    }
+    .pipelineDetailPage .button-group {
+        text-align: right;
+        margin: 15px 0px 0px;
+    }
+    .detailPageContent h5 {
+        position: relative;
+        font-weight: 900;
+        color: var(--white);
+        background-color: rgba(0, 0, 0, .2);
+        border-radius: 6px;
+        font-size: 16px;
+        margin: 15px 0 25px 0;
+    }
+    .pipelineDetailPage.mappingDetail .detailPageContent h5{
+        color: var(--textColor);
+        background-color: transparent;
+        margin: 0 0 25px;
+    }
+    .detailPageContent h5::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        right: 0;
+        top: calc(100% + 8px);
+        background-color: var(--secondaryColor);
+        border-radius: 20px;
+    }
+    .detailPageContent p {
+        font-size: 13px;
+        color: var(--white);
+        background-color: rgba(0, 0, 0, .2);
+        padding: 5px;
+        border-radius: 6px;
+        margin-bottom: 5px;
+        word-break: break-word;
+        font-weight: 600;
+    }
+    .detailPageContent p strong {
+        padding-right: 20px;
+        position: relative;
+        font-weight: 500;
+    }
+    .detailPageContent p strong::after {
+        content: "\2192";
+        position: absolute;
+        top: -8px;
+        right: -1px;
+        color: var(--orange);
+        font-weight: 900;
+        font-size: 18px;
+    }
+    /* Pipeline List View End */
+    /* Show Password Box */
+    .showHideContent {
+        position: relative;
+        padding-right: 65px;
+        margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .showHideContent .button-group {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        z-index: 1;
+    }
+    /* Show Password Box End  */
+    /* Error Page Start */
+    .errorPage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .errorPageContent {
+        text-align: center;
+        background: url("../../assets/images/browser.png") no-repeat center;
+        background-size: contain;
+    }
+    .errorPageHeader {
+        position: relative;
+        z-index: 1;
+    }
+    .errorPageHeader img {
+        width: 90px;
+        display: none;
+    }
+    .errorPageHeader img:first-child {
+        margin-right: 18px;
+    }
+    .errorPageHeader img:last-child {
+        margin-left: 5px;
+    }
+    .errorPageHeader h1 {
+        font-size: 140px;
+        font-weight: bold;
+        color: var(--contentColor);
+        letter-spacing: 15px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
+    }
+    .errorPageContent h4 {
+        font-weight: bold;
+        color: var(--textColor);
+        margin: 20px 0 15px;
+    }
+    .errorPageContent p {
+        color: var(--contentColor);
+        margin: 0;
+    }
+    /*  Error Page End */
+    
+    /* Update Software Start */
+    .updateSoftcontent {
+        min-height: 150px;
+        position: relative;
+    }
+    .updateSoftcontent .updateSpinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .softUpdateList li {
+        color: var(--textColor);
+        font-size: 13px;
+        font-weight: 500;
+    }
+    /* Update Software End */
+    /* No Data Box Start */
+    .noDataBox {
+        padding: 80px 20px;
+        border-radius: 4px;
+        background-color: var(--white);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .noDataBox h4 {
+        text-align: center;
+        color: var(--textColor);
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .noData {
+        color: var(--contentColor);
+        font-size: 16px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* No Data Box End */
+    /* Note Start */
+    .note {
+        font-size: 13px;
+        color: var(--textColor);
+        margin-bottom: 6px;
+    }
+    .note .noteText {
+        color: #dc3545;
+    }
+    /* Note End */
+    /* Footer Start */
+    .footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--footerBackground);
+        padding: 8px;
+        z-index: 4;
+    }
+    .footer p {
+        color: var(--footerTextColor);
+        font-size: 13px;
+        margin: 0;
+        font-weight: 500;
+    }
+    .footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer ul li {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    .footer ul li a {
+        color: var(--footerTextColor);
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .footer ul li:last-child {
+        margin-right: 0;
+    }
+    /* Footer End */
+    .navbar-mob {}
+    /* No Data Box End */
+    /* Dashboard Old CSS */
+    /* .pipelineViewBody ul {
+        padding: 0;
+        margin: 15px 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .pipelineViewBody ul li:first-child::before, .pipelineViewBody ul li:last-child::before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: #808080;
+        position: absolute;
+        top: -3px;
+        z-index: 1;
+    }
+
+    .pipelineViewBody ul li:first-child::before {
+        left: -15px;
+    }
+
+    .pipelineViewBody ul li:last-child::before {
+        right: -15px;
+    }
+
+    .pipelineViewBody ul li {
+        display: inline-block;
+        position: relative;
+        height: 20px;
+        background-image: linear-gradient(#a9a9a9, #e2e2e2);
+        cursor: zoom-in;
+    }
+
+    .pipelineViewBody ul li .zoomBox {
+        border: 2px dashed var(--borderColor);
+        border-width: 2px 0 2px 0;
+        position: absolute;
+        top: -15px;
+        height: 50px;
+        opacity: 0;
+        width: 100%;
+        transition: all ease-in-out 0.3s;
+        /*background-color: rgba(255, 255, 255, 0.55);
+        background-color: rgba(196, 38, 46, 0.2);
+    }
+
+    .pipelineViewBody ul li:hover .zoomBox, .pipelineViewBody ul li.active .zoomBox {
+        opacity: 1;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .pipelineViewBody ul li:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .pipelineViewBody ul li:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .pipelineViewBody ul li::after {
+        content: "";
+        height: 50px;
+        width: 3px;
+        background-color: #A8A8A8;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+    }
+    .pipelineViewBody ul li:last-child::after {
+        display: none;
+    }
+    .pipelineViewBody ul li span {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+    }
+    .pipelineViewBody ul li span::after {
+        content: "";
+        height: 30px;
+        width: 2px;
+        background-color: #cccccc;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        border-radius: 10px;
+    } 
+    
+    .pipelineMarker {
+        width: 35px;
+        height: 35px;
+        border-radius: 50% 50% 50% 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        animation-name: bounce;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .pipelineMarker p {
+        margin: 0;
+        line-height: 35px;
+        font-size: 15px;
+        text-align: center;
+        color: var(--white);
+        transform: rotate(45deg);
+    }
+    .pipelineTooltip p strong {
+        margin-right: 7px;
+        padding-right: 20px;
+        position: relative;
+        font-weight: 400;
+        color: var(--orange);
+    }
+    .pipelineTooltip p strong::after {
+        content: '\279D';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        font-size: 14px;
+    }
+
+    @keyframes bounce {
+        0% {
+            opacity: 0;
+            transform: translateY(-2000px) rotate(-45deg);
+        }
+        60% {
+            opacity: 1;
+            transform: translateY(30px) rotate(-45deg);
+        }
+        80% {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+        100% {
+            transform: translateY(0) rotate(-45deg);
+        }
+    }
+
+
+    ul.pipelineTopology {
+        padding: 0;
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    ul.pipelineTopology li.pipelineBarBox {
+        position: relative;
+        display: inline-block;
+    }
+    li.pipelineBarBox .pipelineBar {
+        background-color: #99ebff;
+    }
+    li.pipelineBarBox.pipelineBar1 .pipelineBar {
+        height: 150px;
+        width: 15px;
+        border-bottom-left-radius: 8px;
+    }
+    li.pipelineBarBox.pipelineBar2 .pipelineBar {
+        height: 15px;
+        width: 200px;
+        margin-top: 135px;
+    }
+    li.pipelineBarBox.pipelineBar3 .pipelineBar {
+        height: 150px;
+        width: 15px;
+        margin-top: 135px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    li.pipelineBarBox.pipelineBar4 .pipelineBar {
+        height: 15px;
+        width: 200px;
+        margin-top: 270px;
+    }
+    li.pipelineBarBox.pipelineBar5 .pipelineBar {
+        height: 150px;
+        width: 15px;
+        margin-top: 135px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    li.pipelineBarBox.pipelineBar6 .pipelineBar {
+        height: 15px;
+        width: 200px;
+        margin-top: 135px;
+    }
+    li.pipelineBarBox.pipelineBar7 .pipelineBar {
+        height: 150px;
+        width: 15px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    li.pipelineBarBox.pipelineBar8 .pipelineBar {
+        height: 15px;
+        width: 200px;
+    }
+    li.pipelineBarBox.pipelineBar9 .pipelineBar {
+        height: 150px;
+        width: 15px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    li.pipelineBarBox.pipelineBar10 .pipelineBar {
+        height: 15px;
+        width: 200px;
+        margin-top: 135px;
+    }
+    li.pipelineBarBox.pipelineBar1 .pipelineBarStart, li.pipelineBarBox.pipelineBar10 .pipelineBarEnd {
+        width: 28px;
+        height: 28px;
+        background-color: #a9a9a9;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        border-radius: 3px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    li.pipelineBarBox.pipelineBar1 .pipelineBarStart {
+        top: -29px;
+    }
+    li.pipelineBarBox.pipelineBar10 .pipelineBarEnd {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -29px;
+        left: initial;
+    }
+    li.pipelineBarBox .pipelineText {
+        position: absolute;
+        margin: 5px 0;
+        font-size: 13px;
+        color: var(--contentColor);
+        right: 10px;
+    }
+    li.pipelineBarBox.pipelineBar1 .pipelineText {
+        top: 50%;
+        transform: translateY(-50%);
+        left: -40px;
+    }
+    li.pipelineBarBox.pipelineBar3 .pipelineText {
+        bottom: -10px;
+        right: 20px;
+    }
+    li.pipelineBarBox.pipelineBar4 .pipelineText, li.pipelineBarBox.pipelineBar6 .pipelineText, li.pipelineBarBox.pipelineBar8 .pipelineText, li.pipelineBarBox.pipelineBar9 .pipelineText {
+        right: 0;
+    }
+    li.pipelineBarBox.pipelineBar5 .pipelineText {
+        top: 38%;
+        right: 0;
+    }
+    li.pipelineBarBox.pipelineBar7 .pipelineText {
+        top: -25px;
+        right: 0;
+    }
+    li.pipelineBarBox.pipelineBar8 .pipelineText {
+        top: -25px;
+    }
+    li.pipelineBarBox.pipelineBar10 .pipelineText {
+        right: 0;
+        margin-top: 10px;
+    }
+    li.pipelineBarBox ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+    }
+    li.pipelineBarBox ul li .pipelineAlarmCount {
+        width: 12px;
+        height: 20px;
+        background-color: #0073e6;
+        cursor: pointer;
+        margin: auto;
+    }
+    li.pipelineBarBox ul.pipelineAlarmVertical {
+        left: initial;
+        right: initial;
+        top: 0;
+        bottom: 0;
+        height: 150px;
+        flex-direction: column;
+    }
+    li.pipelineBarBox ul.pipelineAlarmVertical li .pipelineAlarmCount {
+        width: 20px;
+        height: 12px;
+        margin-left: -3px;
+    }
+    li.pipelineBarBox ul.pipelineAlarmHorizontal li .pipelineAlarmCount {
+        margin-top: -17px;
+    }
+    li.pipelineBarBox.pipelineBar3 ul.pipelineAlarmVertical, li.pipelineBarBox.pipelineBar5 ul.pipelineAlarmVertical {
+        margin-top: 135px;
+    }
+    .tooltipBox {
+        max-width: 150px;
+        padding: 10px 20px;
+    }
+    .tooltipBox p {
+        margin: 0;
+        text-align: center;
+    }
+    .pipeLineGraphImage {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    */
+    /* Dashboard Old CSS */
+    .pageBreadcrumb .pipeLineStatus {
+        position: absolute;
+        left: calc(100% - 5px);
+        bottom: -15px;
+    }
+    .pageBreadcrumb .pipeLineStatus .statusChartFrame {
+        position: relative;
+        height: 70px;
+        width: 110px;
+        margin: 0 auto;
+    }
+    .pageBreadcrumb .pipeLineStatus .statusChartFrame>div {
+        height: 100%;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm::before, .pageBreadcrumb .pipeLineStatus.statusAlarm::after {
+        content: "";
+        position: absolute;
+        border: 3px solid #ff0000;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: translateX(-50%) rotate(-45deg);
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm::before {
+        top: 17px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm::after {
+        top: 25px;
+        left: 50%;
+        width: 55px;
+        height: 55px;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::before, .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::after {
+        content: "";
+        position: absolute;
+        bottom: 16px;
+        width: 13px;
+        border-top: 3px solid #ff0000;
+        border-radius: 4px;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::before {
+        left: 17%;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::after {
+        right: 17%;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm::before, .pageBreadcrumb .pipeLineStatus.statusAlarm::after, .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::before, .pageBreadcrumb .pipeLineStatus.statusAlarm .statusChartFrame::after {
+        animation: alert .6s ease-out infinite alternate;
+    }
+    .pageBreadcrumb .pipeLineStatus.statusAlarm .gaugeAalrm {
+        display: inline-block;
+        position: absolute !important;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        height: 8px;
+        z-index: 1;
+        width: 8px;
+        border-radius: 50%;
+        animation: gaugeAlarm .6s ease-in-out infinite alternate;
+        box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.3);
+        background-color: #ff0000;
+    }
+    .navbar-toggler {
+        padding: 10px 15px;
+        border: 1px solid var(--borderColor);
+        color: var(--navigationMenuText) !important;
+    }
+    .div-lg {
+        flex: 0 0 70%;
+        max-width: 70%;
+        padding-right: 10px;
+    }
+    .div-sm {
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding-left: 10px;
+    }
+    .mr-b-lg {
+        margin-bottom: 20px;
+    }
+    .pipelineListMob {}
+    .pipelineHighlights {
+        top: calc(100% + 5px);
+    }
+    .profileDetailsHover {
+        top: 20px;
+    }
+    .profileDetailsHover, .pipelineHighlights {
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        z-index: 1;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .profileDetailsHover p, .pipelineHighlights p {
+        margin: 0px 20px 0px 0px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--textColor);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .profileDetailsHover p strong, .pipelineHighlights p strong {
+        position: relative;
+        margin: 0 4px 0 0;
+        color: var(--contentColor);
+        padding-right: 8px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .profileDetailsHover strong::after, .pipelineHighlights strong::after {
+        content: ":";
+        position: absolute;
+        right: 0;
+    }
+    .profileDetailsHover p:last-child, .pipelineHighlights p:last-child {
+        margin-right: 0;
+    }
+    .pipelineViewBody .pipelineHighlights {
+        top: unset;
+        bottom: 0;
+    }
+    .pageBreadcrumb-lg {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    .pageBreadcrumb-sm {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    .modalDiv-sm {
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-left: 10px;
+    }
+    .modalDiv-lg {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding-right: 10px;
+    }
+    .commissionerChartBox .filterBox .form-group {
+        position: relative;
+        padding: 0 155px 0 105px;
+    }
+    .commissionerChartBox .filterBox .form-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin: 0;
+    }
+    .commissionerChartBox .filterBox .btn-slide {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .pipelineTopologyBox .note {
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        margin: 5px;
+    }
+    .landscapeModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 6000;
+    }
+    .landscapeModal .modalContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: var(--white);
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .landscapeModal .modalContent .modalImg {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
+    }
+    .landscapeModal .modalContent .modalImg img {
+        height: 100%;
+        width: 100%;
+        object-position: center;
+        object-fit: contain;
+    }
+    .landscapeModal .modalContent h4 {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--textColor);
+    }
+    .userInfo-md {
+        display: none;
+    }
+    .profileViewHeader {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    @media only screen and (orientation: landscape) {
+        .landscapeModal {
+            display: none;
+        }
+        .languageSelector {
+            min-width: 560px !important;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b40 {
+            flex-basis: 15% !important;
+            max-width: 15% !important;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b40.text-right {
+            text-align: left !important;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b60 {
+            flex-basis: 85% !important;
+            max-width: 85% !important;
+        }
+        .profileViewHeader {
+            margin-bottom: 60px;
+        }
+        .pageBreadcrumb .pipeLineStatus {
+            left: 214px;
+        }
+        .prev-button {
+            left: 20%;
+        }
+        .next-button {
+            right: 20%;
+        }
+        .pipeLineViewBox .card-header .toggleButton {
+            position: absolute;
+            top: calc(100% + 40px);
+            left: 0;
+            transform: translateY(-50%);
+            background: white;
+            z-index: 1;
+        }
+        .pipeLineViewBox .card-header .form-group {
+            position: absolute;
+            top: calc(100% + 40px);
+            transform: translateY(-50%);
+            right: 0;
+            padding-left: 0px;
+            min-width: 150px;
+        }
+        .legendsDropdown .dropdown-menu {
+            bottom: -160px !important;
+            left: calc(100% - 72px) !important;
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .landscapeModal {
+            display: block;
+        }
+        .userInfo-md {
+            display: block;
+            border-bottom: 1px solid var(--borderColor);
+        }
+        .userInfo-md p, .userInfo-md h6 {
+            color: var(--textColor) !important;
+        }
+        .userInfo-lg {
+            display: none;
+        }
+        .languageSelector {
+            min-width: 260px !important;
+        }
+        .pageBreadcrumb .pipeLineStatus {
+            left: 114px;
+            bottom: 10px;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b40 {
+            flex-basis: 30% !important;
+            max-width: 30% !important;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b40.text-right {
+            text-align: left !important;
+        }
+        .pageBreadcrumb-sm .form-group .fx-b60 {
+            flex-basis: 70% !important;
+            max-width: 70% !important;
+        }
+        .md-port-d-b {
+            display: block !important;
+            margin-bottom: 5px;
+        }
+        .md-port-hide {
+            display: none !important;
+        }
+        .profileViewHeader {
+            margin-bottom: 130px;
+        }
+        .prev-button {
+            left: -18px;
+        }
+        .next-button {
+            right: -18px;
+        }
+        .pipeLineViewBox .card-header .timeStatus {
+            left: 0;
+            right: 0;
+            transform: unset;
+        }
+        .pipeLineViewBox .card-header .toggleButton {
+            position: absolute;
+            top: calc(100% + 55px);
+            left: 55px;
+            transform: translateY(-50%);
+            background: white;
+            z-index: 1;
+        }
+        .pipeLineViewBox .card-header .form-group {
+            position: absolute;
+            margin: 0;
+            top: calc(100% + 110px);
+            transform: translateY(-50%);
+            right: 55px;
+            padding-left: 0px;
+            min-width: 150px;
+        }
+        .legendsDropdown .dropdown-menu {
+            bottom: -160px !important;
+            left: calc(100% - 108px) !important;
+        }
+        .parameterTrendingInfo>li {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        .parameterTrendingInfo>li:nth-child(even) {
+            border-right: none;
+        }
+    }
+    .operatorDashBoard .card-body.pipelineNavBody {
+        height: calc(100vh - 152px);
+    }
+    .navbar-mob {
+        position: fixed;
+        top: 54px;
+        bottom: 38px;
+        left: 0;
+        right: 40%;
+        transition: all .4s ease;
+        border-radius: 0 5px 5px 0;
+        border: 2px solid var(--borderColor);
+        background: linear-gradient(to bottom, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+        overflow-y: auto;
+    }
+    .appHeader .navbar-nav .nav-item .nav-link {
+        display: inline-block;
+    }
+    .div-lg, .div-sm {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .mr-b-sm {
+        margin-bottom: 20px;
+    }
+    .pipeLineViewBox .card-header .form-group .form-label {
+        display: none;
+    }
+    .detailViewGraph {
+        height: 250px;
+    }
+    .pipelineListMob {
+        position: fixed;
+        top: 54px;
+        left: -98.6%;
+        width: 98.6%;
+        z-index: 4;
+    }
+    .pageBreadcrumb-lg {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .pageBreadcrumb-sm {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .modalDiv-sm, .modalDiv-lg {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px;
+    }
+    .minHeight {
+        min-height: 500px;
+    }
+    .expandBox.minHeight {
+        min-height: unset;
+    }
+    .card.pipeLineViewBox.expandBox .pipelineViewBody .schematicView, .card.pipeLineListViewBox.expandBox .pipelineListViewBody .schematicView {
+        top: 25%;
+    }
+    .pageBreadcrumb {
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+        right: unset !important;
+    }
+}

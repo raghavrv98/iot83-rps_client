@@ -1,0 +1,11 @@
+
+NODE_IMAGE=$(cat .env | sed -n 's/NODE_IMAGE=\(.*\)$/\1/p')
+
+docker run \
+	--rm \
+	--interactive \
+	--tty \
+	--volume=$PWD:/workdir \
+	--workdir=/workdir \
+    --entrypoint=npx \
+	$NODE_IMAGE $*

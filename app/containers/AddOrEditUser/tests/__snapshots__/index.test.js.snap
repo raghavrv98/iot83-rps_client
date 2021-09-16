@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddOrEditUser /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      AddOrEditUser
+    </title>
+    <meta
+      content="Description of AddOrEditUser"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage Users"
+            id="app.containers.AddOrEditUser.title"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Create User"
+          id="app.containers.AddOrEditUser.titleCreateUser"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="skeletonNestedFormUpload"
+  />
+</div>
+`;

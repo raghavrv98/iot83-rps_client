@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< ResetPassword /> match snapshots 1`] = `
+<div
+  className="loginBg"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ResetPassword
+    </title>
+    <meta
+      content="Description of ResetPassword"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="loginFrame"
+  >
+    <div
+      className="loginBranding"
+    >
+      <div
+        className="brandingLogo"
+      >
+        <img
+          onError={[Function]}
+          src="undefinedapi/public/static/logo/pmmp.jpeg"
+        />
+      </div>
+      <h6
+        className="brandingText"
+      >
+        <span
+          className="brand"
+        >
+          RAYCHEM
+        </span>
+        Pipeline Supervisor
+      </h6>
+    </div>
+    <div
+      className="loginInfo"
+    >
+      <div
+        className="welcomeText"
+      >
+        <h4>
+          <FormattedMessage
+            defaultMessage="WE CONNECT AND PROTECT"
+            id="app.common.messages.welcomText"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </h4>
+      </div>
+      <div
+        className="loginForm"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="formRow"
+          >
+            <input
+              className="form-control"
+              placeholder="New Password"
+              required={true}
+              type="password"
+            />
+          </div>
+          <div
+            className="formRow"
+          >
+            <input
+              className="form-control"
+              placeholder="Confirm Password"
+              required={true}
+              type="password"
+            />
+          </div>
+          <div
+            className="formRow"
+          >
+            <button
+              className="btn-danger"
+            >
+              <FormattedMessage
+                defaultMessage="Reset Password"
+                id="app.containers.ResetPassword.resetPassword"
+                values={Object {}}
+              >
+                <Component />
+              </FormattedMessage>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

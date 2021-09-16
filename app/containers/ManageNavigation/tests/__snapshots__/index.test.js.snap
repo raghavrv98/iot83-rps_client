@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< ManageNavigation /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ManageNavigation
+    </title>
+    <meta
+      content="Description of ManageNavigation"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Manage Navigations"
+          id="app.containers.ManageNavigation.titleManageNav"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="All Available Navigations"
+          id="app.containers.ManageNavigation.title"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+</div>
+`;

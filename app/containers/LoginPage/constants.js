@@ -1,0 +1,21 @@
+/*
+ *
+ * LoginPage constants
+ *
+ */
+
+export const DEFAULT_ACTION = "app/LoginPage/DEFAULT_ACTION";
+
+export const LOGIN_API_REQUEST = "app/LoginPage/LOGIN_API_REQUEST";
+export const LOGIN_API_SUCCESS = "app/LoginPage/LOGIN_API_SUCCESS";
+export const LOGIN_API_FAILURE = "app/LoginPage/LOGIN_API_FAILURE";
+
+export const RESET_PASSWORD_API_REQUEST = "app/LoginPage/RESET_PASSWORD_API_REQUEST";
+export const RESET_PASSWORD_API_SUCCESS = "app/LoginPage/RESET_PASSWORD_API_SUCCESS";
+export const RESET_PASSWORD_API_FAILURE = "app/LoginPage/RESET_PASSWORD_API_FAILURE";
+
+export const GET_AUTH_CONFIG_DETAILS = "app/LoginPage/GET_AUTH_CONFIG_DETAILS";
+export const GET_AUTH_CONFIG_DETAILS_SUCCESS = "app/LoginPage/GET_AUTH_CONFIG_DETAILS_SUCCESS";
+export const GET_AUTH_CONFIG_DETAILS_FAILURE = "app/LoginPage/GET_AUTH_CONFIG_DETAILS_FAILURE";
+
+export const GET_LOGIN_TOKEN = "app/LoginPage/GET_LOGIN_TOKEN";

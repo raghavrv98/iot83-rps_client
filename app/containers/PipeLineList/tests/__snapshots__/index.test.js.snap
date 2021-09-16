@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< PipeLineList /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      PipeLineList
+    </title>
+    <meta
+      content="Description of PipeLineList"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb "
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Dashboard"
+          id="app.common.messages.dashboard"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="All Available Pipelines"
+          id="app.containers.PipeLineList.allAvailablePipelines"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30"
+    >
+      <div
+        className="form-group mr-b-0 flex align-items-baseline"
+      >
+        <label
+          className="form-label f-13 fx-b40 pd-r-10 text-right"
+        >
+          <FormattedMessage
+            defaultMessage="Select Plant"
+            id="app.common.messages.selectPlant"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+           :
+        </label>
+        <StateManager
+          className="form-control-multi-select fx-b60"
+          defaultInputValue=""
+          defaultMenuIsOpen={false}
+          defaultValue={null}
+          id="selectedPlant"
+          isDisabled={true}
+          onChange={[Function]}
+          options={Array []}
+          value={
+            Object {
+              "label": "ALL",
+              "value": "all",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="skeletonFullView"
+  />
+</div>
+`;

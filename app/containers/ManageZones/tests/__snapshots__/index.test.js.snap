@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manageAgentsSaga Saga match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      ManageZones
+    </title>
+    <meta
+      content="Description of ManageZones"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage Pipelines"
+            id="app.common.messages.managePipeline"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Manage EHT Zone"
+          id="app.common.messages.manageZone"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <span
+          className="mr-l-15 mr-r-15"
+        >
+          |
+        </span>
+        <FormattedMessage
+          defaultMessage="Plant Name"
+          id="app.common.messages.plantName"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+         - 
+        <span
+          className="text-theme"
+        />
+        <span
+          className="mr-l-15 mr-r-15"
+        >
+          |
+        </span>
+        <FormattedMessage
+          defaultMessage="Pipeline Name"
+          id="app.common.messages.pipelineName"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+         - 
+        <span
+          className="text-theme"
+        />
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="skeletonReactTable"
+  />
+</div>
+`;

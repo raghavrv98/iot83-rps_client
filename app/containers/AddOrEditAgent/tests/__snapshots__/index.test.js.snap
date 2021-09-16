@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddOrEditAgent /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+       AddOrEditAgent 
+    </title>
+    <meta
+      content="Description of AddOrEditAgent"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+            type="button"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage Agents"
+            id="app.common.messages.manageAgents"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Create Agent"
+          id="app.containers.AddOrEditAgent.headingAdd"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+    <div
+      className="flex-item fx-b30 text-right align-items-center"
+    />
+  </div>
+  <form
+    className="contentForm"
+    onSubmit={[Function]}
+  >
+    <h5
+      className="formHeader"
+    >
+      <FormattedMessage
+        defaultMessage="Create Agent"
+        id="app.containers.AddOrEditAgent.headingAdd"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+      <div
+        className="headerItemRight"
+      >
+        <div
+          className="switchButtonLabel"
+        >
+          <label
+            className="switchLabelText"
+          >
+            <FormattedMessage
+              defaultMessage="Agent Status"
+              id="app.containers.AddOrEditAgent.agentStatus"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+             :
+          </label>
+          <label
+            className="switchLabel"
+          >
+            <input
+              checked={false}
+              id="active"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="switchMark"
+            />
+          </label>
+        </div>
+      </div>
+    </h5>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="name"
+          id="app.common.messages.name"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        autoFocus={true}
+        className="form-control"
+        id="name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Device Tag"
+          id="app.containers.AddOrEditAgent.devicetag"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        className="form-control"
+        id="deviceTag"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Type"
+          id="app.common.messages.type"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <select
+        className="form-control"
+        disabled={false}
+        id="type"
+        onChange={[Function]}
+        required={true}
+        value="dcsagent"
+      >
+        <FormattedMessage
+          defaultMessage="AP Sensing DTS Poller"
+          id="app.containers.AddOrEditAgent.option1"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <FormattedMessage
+          defaultMessage="DCS Agent"
+          id="app.containers.AddOrEditAgent.option2"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </select>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Modbus Port"
+          id="app.containers.AddOrEditAgent.addModbusPort"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        className="form-control"
+        id="modbusPort"
+        max="65535"
+        min="1"
+        onChange={[Function]}
+        required={true}
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Modbus Map"
+          id="app.containers.AddOrEditAgent.addModbusMap"
+          values={Object {}}
+        />
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="fx-b80"
+      >
+        <div
+          className="dropZoneOuterBox pd-r-0 mr-0 w-100"
+        >
+          <n
+            accept=".csv"
+            className="dropZoneBox"
+            disableClick={false}
+            disablePreview={false}
+            disabled={false}
+            getDataTransferItems={[Function]}
+            inputProps={Object {}}
+            maxSize={Infinity}
+            minSize={0}
+            multiple={false}
+            onDrop={[Function]}
+            preventDropOnDocument={true}
+          >
+            <div
+              className="dropZoneBoxContent"
+            >
+              <img
+                src="IMAGE_MOCK"
+              />
+              <p>
+                 
+                <FormattedMessage
+                  defaultMessage="Drop files or click to select files to upload."
+                  id="app.common.messages.dropzonemsg"
+                  values={Object {}}
+                />
+              </p>
+            </div>
+          </n>
+        </div>
+        <button
+          className="btn-transparent text-cyan mr-t-8 pd-0"
+          onClick={[Function]}
+          type="button"
+        >
+          <FormattedMessage
+            defaultMessage="Download Sample"
+            id="app.common.messages.downloadSample"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+          <i
+            className="far fa-download mr-l-8"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="form-group justify-content-end mt-3"
+    >
+      <button
+        className="btn btn-danger"
+        id="saveAgent"
+      >
+        <i
+          className="far fa-check-circle"
+        />
+        <FormattedMessage
+          defaultMessage="Save"
+          id="app.common.messages.save"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </button>
+    </div>
+  </form>
+</div>
+`;

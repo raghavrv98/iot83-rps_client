@@ -1,0 +1,186 @@
+@media only screen {
+    .loginBg {
+        position: relative;
+        background: url('../images/nVent-bg.jpg') center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .loginBg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    .loginFrame {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        z-index: 1;
+    }
+    .loginInfo, .loginBranding {
+        position: relative;
+        padding: 30px 45px;
+        flex-basis: 49.77%;
+        max-width: 49.77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loginBranding {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .loginBranding .brandingLogo {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto 8px;
+    }
+    .loginBranding .brandingLogo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .loginBranding .brandingText {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 7px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--primaryColor);
+        border-top: 2px solid var(--secondaryColor);
+        font-family: 'Quicksand', sans-serif !important;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, .1);
+    }
+    .loginInfo {
+        background-color: rgba(0, 0, 0, 0.55);
+        border-left: 8px solid var(--secondaryColor);
+        font-family: 'Roboto', sans-serif;
+    }
+    .loginInfo .welcomeText h4 {
+        position: relative;
+        color: var(--white);
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .loginInfo .welcomeText h3 {
+        position: relative;
+        margin-bottom: 0px;
+        color: var(--white);
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .loginInfo .welcomeText h4 i, .loginInfo .welcomeText h3 i {
+        position: relative;
+        color: var(--white);
+        font-size: 18px;
+    }
+    .loginInfo .welcomeText h4 i {
+        transform: translate(-5px, -3px);
+    }
+    .loginInfo .welcomeText h3 i {
+        transform: translate(5px, -6px);
+    }
+    .loginForm {
+        position: relative;
+        padding: 55px 0 0 0;
+        min-height: 390px;
+    }
+    .loginForm .loginError {
+        margin: 0;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        color: var(--red);
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .loginForm .formRow {
+        margin-bottom: 14px;
+    }
+    .loginForm .formRow:last-child {
+        margin: 0;
+    }
+    .loginForm label {
+        color: var(--labelColor);
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        margin: 0;
+    }
+    .loginForm .form-control {
+        border-color: var(--primaryColor);
+        background-color: var(--primaryColor);
+        font-size: 14px;
+        padding: 10px 20px;
+        color: var(--labelColor);
+        border-radius: 4px;
+    }
+    .loginForm .form-control::placeholder {
+        color: var(--secondaryColor);
+    }
+    .loginForm .form-control:hover, .loginForm .form-control:focus {
+        box-shadow: none;
+    }
+    .loginForm .btn-danger {
+        width: 100%;
+    }
+    .loginForm .btn-danger:hover {
+        transform: none !important;
+    }
+    .loginForm .btn-transparent {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--white);
+    }
+    .loginForm .btn-transparent img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .loginForm .btn-transparent:hover {
+        text-decoration: underline;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    .loginForm .radioText {
+        color: var(--labelColor);
+    }
+    .loginForm .link {
+        display: inline-block;
+        font-size: 13px;
+        text-align: center;
+    }
+    .loginForm h5 {
+        margin: 0;
+        color: var(--labelColor);
+        font-size: 14px;
+        text-align: center;
+    }
+    .loginLoader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: var(--secondaryColor);
+        text-align: center;
+    }
+    .loginLoader i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

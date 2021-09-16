@@ -1,0 +1,69 @@
+.tooltip-wrapper {
+    position: fixed;
+    padding: 6px 12px;
+    font-size: 11px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #000;
+    border-radius: 4px;
+    visibility: hidden;
+    z-index: 10000;
+}
+.tooltip-wrapper::before {
+    position: absolute;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .8);
+}
+.tooltip-wrapper[data-place=top-center]::before, .tooltip-wrapper[data-place=bottom-center]::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip-wrapper[data-place=center-right]::before, .tooltip-wrapper[data-place=center-left]::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tooltip-wrapper[data-place=top-center]::before {
+    content: "\25BC";
+    top: calc(100% - 8px);
+}
+.tooltip-wrapper[data-place=center-right]::before {
+    content: "\25C4";
+    right: calc(100% - 3px);
+}
+.tooltip-wrapper[data-place=bottom-center]::before {
+    content: "\25B2";
+    bottom: calc(100% - 8px);
+}
+.tooltip-wrapper[data-place=center-left]::before {
+    content: "\25BA";
+    left: calc(100% - 3px);
+}
+.tooltip-wrapper[data-place=top-right]::before, .tooltip-wrapper[data-place=top-left]::before, .tooltip-wrapper[data-place=bottom-right]::before, .tooltip-wrapper[data-place=bottom-left]::before {
+    content: "\27A4";
+}
+.tooltip-wrapper[data-place=top-right]::before, .tooltip-wrapper[data-place=top-left]::before {
+    top: calc(100% - 11px);
+}
+.tooltip-wrapper[data-place=top-right]::before, .tooltip-wrapper[data-place=bottom-right]::before {
+    right: calc(100% - 7px);
+}
+.tooltip-wrapper[data-place=bottom-right]::before, .tooltip-wrapper[data-place=bottom-left]::before {
+    bottom: calc(100% - 11px);
+}
+.tooltip-wrapper[data-place=top-left]::before, .tooltip-wrapper[data-place=bottom-left]::before {
+    left: calc(100% - 7px);
+}
+.tooltip-wrapper[data-place=top-right]::before {
+    transform: rotate(135deg);
+}
+.tooltip-wrapper[data-place=top-left]::before {
+    transform: rotate(45deg);
+}
+.tooltip-wrapper[data-place=bottom-right]::before {
+    transform: rotate(-135deg);
+}
+.tooltip-wrapper[data-place=bottom-left]::before {
+    transform: rotate(-45deg);
+}

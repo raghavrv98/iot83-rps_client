@@ -1,0 +1,1486 @@
+.skeletonButton{
+  position: relative;
+  border-radius: 50px;
+  background-color: var(--skeletonColor);
+}
+
+.skeletonContent{
+  position: relative;
+  display: inline-block;
+  background-color: var(--skeletonColor);
+  border-radius: 4px;
+}
+/* list skeleton start  */
+.listView {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.listView li {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 84.89px;
+}
+.listView li:last-child {
+  margin-bottom: 0;
+}
+.listView li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 3px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--borderDarkColor);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.listView .listLogo {
+  padding: 8px 15px;
+  height: 66.44px;
+}
+.listLogo div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.listView .listDetail {
+  flex: 1;
+  padding: 15px;
+}
+.listDetail > h6 {
+  display: block;
+  margin: 0 0 10px;
+  width: 200px;
+  height: 14.22px;
+}
+.listDetail > p {
+  display: block;
+  margin: 0;
+  width: 100px;
+  height: 14.22px;
+}
+.listView.alarmView li {
+  padding: 15px 200px 15px 80px;
+}
+.listView.alarmView .listLogo {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  top: 16px;
+  left: 16px;
+  padding: 0;
+}
+.listView.alarmView li p{
+  width: 100%;
+  background-color: transparent;
+}
+.listView.alarmView li .skeletonContent.alarmDetailSkeleton{
+  margin: 0;
+  width: 50%;
+  height: 12px;
+  background-color: var(--skeletonColor);
+}
+.listView.alarmView li span{ 
+  width: 150px;
+  height: 12px;
+  margin-right: 10px;
+}
+.listView.alarmView li span:last-child{
+  margin: 0;
+}
+.listView.alarmView .btnList{
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnList .skeletonButton{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; 
+}
+/* list skeleton end  */
+
+/* alarm alerts view skeleton start  */
+.alarmAlertsView {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.filterView{
+  position: relative;
+}
+.alarmAlertsView div:last-child{
+  padding-right: 0 !important;
+}
+.alarmAlertsView .filterView div{
+  width: 100%;
+  height: 30px;
+  background-color: var(--skeletonColor);
+}
+.filterView h6{
+  width: 150px;
+  height: 18px;
+}
+/* alarm alerts view skeleton end  */
+
+/* pipelineList View skeleton start */
+.listView.pipeList li {
+  padding: 0 70px 0 150px;
+}
+
+.pipeInfo {
+  height: 60px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+  background-color: var(--skeletonColor);
+  border-radius: 50px 50px 0 0;
+}
+
+/* .pipelineDetailButton {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: var(--skeletonColor);
+}
+
+.pipelineSummaryOuter {
+  padding: 0 10px 0 150px;
+  width: 100%;
+} */
+
+.gaugeSkeleton {
+  width: 100px;
+  height: 80px;
+  padding: 16px 0 4px;
+  margin: 0 auto 10px;
+}
+
+.gaugeSkeleton .pipeInfo {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+.pageBreadcrumb .gaugeSkeleton {
+  position: absolute;
+  left: calc(100% - -5px);
+  bottom: -20px;
+  padding: 30px 0 4px;
+}
+/* pipelineList View skeleton end */
+
+/* card skeleton start  */
+.cardView {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+} 
+
+.cardView li {
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+}
+
+.cardView .card {
+  background-color: var(--white);
+  border-radius: 6px;
+  margin: 0 10px 20px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 352px;
+}
+.cardView .card .card-header {
+  height: 150px;
+  background-color: var(--skeletonColor);
+  position: relative;
+  padding: 0;
+  height: 210px;
+  border: 0;
+}
+.cardView .card .customCardHeader {
+  position: relative;
+  width: auto;
+  height: 40.44px;
+  border-radius: 6px 6px 0 0;
+  background-color: var(--tableHeadingBackground);
+}
+.cardView .customCardHeader .skeletonContent {
+  width: 100px;
+  height: 16px;
+  margin: 10px;
+  display: block;
+}
+.cardView .card-header .btnLayout {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 119.33px;
+  height: 34.22px;
+  background-color: var(--tableHeadingBackground);
+}
+.buttonContent .skeletonButton {
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px 10px 5px;
+}
+.cardView .card-body h6 {
+  width: 100px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+.cardView .card-body p {
+  width: 200px;
+  height: 20px;
+  margin: 0;
+}
+.skeletonShift {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skeletonShift li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: var(--skeletonColor);
+  margin-right: 5px;
+}
+/* card skeleton end  */
+
+/* React table skeleton start  */
+.noDataOuter .ReactTable .rt-thead .rt-tr {
+  height: 37.78px;
+}
+.noDataOuter .customReactTable.ReactTable .rt-thead.-header .rt-th {
+  background-color: var(--skeletonColor);
+  z-index: 0;
+}
+.noDataOuter .ReactTable .rt-resizable-header-content {
+  width: 115px;
+  height: 17.78px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.noDataOuter .customReactTable.ReactTable .rt-tbody .rt-tr-group {
+  height: 43.44px;
+}
+.noDataOuter .customReactTable.ReactTable .rt-tbody span {
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 19.56px;
+  background-color: lightgrey;
+  border-radius: 4[x];
+}
+.noDataOuter .ReactTable .-pagination .-pageInfo,
+.noDataOuter .ReactTable .-pagination .-pageSizeOptions {
+  background-color: var(--skeletonColor);
+  width: 100px;
+  height: 32.44px;
+}
+.noDataOuter .customReactTable.ReactTable .-pagination .-pageInfo {
+  background-color: var(--skeletonColor);
+  color: var(--skeletonColor);
+  width: 141.89px;
+}
+.noDataOuter .ReactTable .-pagination .-pageJump {
+  display: none;
+}
+.noDataOuter .ReactTable .-pagination .-totalPages {
+  visibility: hidden;
+}
+.noDataOuter .customReactTable.ReactTable .-pagination select {
+  background-color: var(--skeletonColor);
+  color: var(--skeletonColor);
+  border: none;
+  width: 102.22px;
+}
+.customReactTable.ReactTable .rt-noData .noDataOuter {
+  height: 100%;
+}
+.customReactTable.ReactTable .rt-noData .noDataMidView {
+  background-color: transparent;
+}
+/* React table skeleton end  */
+
+/* HTML table skeleton start  */
+.tableMinHeight {
+  min-height: 300px;
+}
+.noDataOuter .table.customHTMLTable thead th {
+  height: 39.11px;
+  background-color: var(--skeletonColor);
+}
+.noDataOuter .table.customHTMLTable thead span {
+  width: 79.6px;
+  height: 17.78px;
+  background-color: gray;
+}
+.noDataOuter .table.customHTMLTable tbody td {
+  height: 39.11px;
+}
+.noDataOuter .table.customHTMLTable tbody span {
+  width: 79.6px;
+  height: 0.96em;
+}
+/* HTML table skeleton end  */
+
+/* flowChart skeleton start */
+.skeletonTreeView{
+  position: relative;
+  list-style-type: none;
+  padding-left: 30px;
+  margin: 0;
+}
+.skeletonTreeView::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 22px;
+  display: inline-block;
+  width: 2px;
+  background-color: var(--borderDarkColor);
+}
+.skeletonTreeView li{
+  position: relative;
+  margin-bottom: 20px;
+}
+.skeletonTreeView li:last-child{
+  margin: 0;
+}
+.treeContent, .DecisionContent{
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.treeContent:last-child{
+  margin-right: 0;
+}
+
+.treeContent::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  display: inline-block;
+  width: 2px;
+  height: 60px;
+  background-color: var(--borderDarkColor);
+  z-index: -1;
+}
+.DecisionContent{
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.DecisionContent::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 22px;
+  background-color: var(--borderDarkColor);
+  z-index: -1;
+}
+.treeContent h6{
+  margin: 0;
+  z-index: 1;
+  width: 150px;
+  height: 38px;
+}
+.nodeEditBox{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--white);
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  width: 350px;
+  padding: 20px;
+}
+.nodeEditBox .nodeHeading{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--borderDarkColor);
+}
+.nodeHeading h6{
+  width: 100px;
+  height: 20px;
+  margin: 0;
+}
+.nodeEditBox .skeletonButton{
+  width: 80px;
+  height: 30px;
+  border-radius: 34px;
+}
+/* flowChart skeleton start */
+
+/* alarm type skeleton start */
+.typeSkeleton {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 1.25em;
+}
+.typeSkeleton .itemSkeleton {
+  position: relative;
+  margin: 10px;
+  padding: 12px 35px 10px 50px;
+  border-radius: 4px;
+  border: 2px solid var(--borderColor);
+}
+.itemSkeleton span {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.itemSkeleton div {
+  position: relative;
+  height: 14px;
+  width: 100px;
+  background-color: var(--skeletonColor);
+}
+.itemSkeleton .skeletonButton {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.addAlarm .noDataSmallView .noDataImage img {
+  top: calc(100% - 35px);
+}
+/* alarm type skeleton end */
+
+/* line chart start  */
+.pipelineTopologyBox .noDataOuter,
+.parameterTrending .noDataOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.chartOuter{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding: 20px 40px 20px 80px;
+  border: 2px dashed var(--borderColor);
+}
+.chartOuter.borderNone{
+  border: none !important;
+}
+.chartOuter .chartInner{
+  border: 1px solid var(--borderColor);
+  border-right: transparent;
+  border-top: transparent;
+  background: linear-gradient(90deg, rgba(211,211,211,.5) 0%, rgba(255,255,255,.5) 100%);
+  width: 100%;
+  min-height: 250px;
+}
+.chartOuter .yLabels{
+  position: absolute;
+  left: 40px;
+  top: 36px;
+  bottom: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.yLabels span, .xLabels span{
+  width: 20px;
+  height: 12px;
+}
+.chartOuter .xLabels{
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line chart end  */
+
+/* dashboard  skeleton start  */
+.dashSkeleton {
+  position: relative;
+  padding: 10px;
+  border: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+}
+.dashSkeleton .card-header {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+  padding: 10px;
+}
+.dashSkeleton .card-header .skeletonHighlights {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+.skeletonHighlights p {
+  width: 125px;
+  height: 18px;
+  margin: 0 20px 0 0;
+}
+.dashSkeleton .card-body {
+  position: relative;
+  padding: 10px;
+}
+.dashSkeleton .card-body .schematicChart {
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schematicChart .pipelineStructure {
+  position: relative;
+  width: 85%;
+  margin: 0;
+}
+.schematicChart .pipelineNavAlarm {
+  background-color: var(--skeletonColor);
+}
+.dashboardSkeleton.skeletonPipelineFilter {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.dashboardSkeleton.skeletonPipelineFilter .card-body {
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+.dashboardSkeleton.skeletonPipelineFilter .skeletonPipelineHealth {
+  padding: 0 25px;
+}
+.dashSkeleton .detailView {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+  padding: 10px;
+}
+.detailView .BtntoggleSkeleton,
+.detailViewHeader .BtntoggleSkeleton {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.BtntoggleSkeleton .skeletonButton {
+  z-index: 1;
+  width: 189px;
+  height: 31px;
+}
+.detailView .attributeSkeleton,
+.detailViewHeader .attributeSkeleton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding-left: 100px;
+  width: 220px;
+  height: 33px;
+  background-color: var(--skeletonColor);
+}
+.dashSkeleton .chartSkeleton {
+  min-height: 400px;
+  margin-top: 10px;
+}
+.lineChart {
+  height: 285px;
+  padding: 10px 10px 0;
+  border: 2px dashed #e2e2e2;
+}
+.detailView.paramterHeading .skeletonButton {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: var(--skeletonColor);
+}
+.dashSkeleton .parameterSkeleton {
+  min-height: 420px;
+}
+.parameterSkeleton ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid var(--borderColor);
+}
+.parameterSkeleton li {
+  position: relative;
+  flex-basis: 25%;
+  max-width: 25%;
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  border-right: 1px solid var(--borderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parameterSkeleton li:last-child {
+  border: 0;
+}
+.parameterSkeleton li h6 {
+  width: 50px;
+  height: 12px;
+}
+.parameterSkeleton li p {
+  width: 50px;
+  height: 13px;
+}
+.statusSkeleton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.statusSkeleton p {
+  width: 80px;
+  height: 12px;
+  margin: 0;
+}
+.statusSkeleton div {
+  width: 104px;
+  height: 13px;
+  background-color: var(--skeletonColor);
+}
+.graphSkeleton {
+  position: relative;
+  min-height: 233px;
+}
+.detailViewHeader {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+/* dashboard skeleton end  */
+
+/* analyst dashboard fullview start  */
+.skeletonDash {
+  padding-right: 400px;
+}
+.skeletonChartBox {
+  position: relative;
+  min-height: calc(100vh - 195px);
+}
+.skeletonFilterBox {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skeletonFilterBox > div {
+  position: relative;
+  padding: 0 155px 0 105px;
+}
+.skeletonFilterBox > div label {
+  width: 99px;
+  height: 13px;
+  background-color: var(--skeletonColor);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 0;
+}
+.skeletonFilterBox > div div {
+  width: 100%;
+  height: 32px;
+  background-color: var(--skeletonColor);
+}
+.skeletonFilterBox > div .skeletonButton {
+  width: 140px;
+  height: 36px;
+  border-radius: 34px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.skeletonChartBox .skeletonCard {
+  position: relative;
+  padding: 10px;
+  border: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+  background-color: var(--white);
+}
+.skeletonCard .card-header {
+  border: 0;
+  background-color: transparent;
+}
+.skeletonCard .card-header span {
+  width: 200px;
+  height: 15px;
+}
+.skeletonCard .card-body {
+  min-height: 300px;
+  border: 2px dashed var(--borderColor);
+}
+.skeletonPipelineFilter {
+  position: fixed;
+  top: 140px;
+  right: 20px;
+  width: 360px;
+  bottom: 60px;
+}
+.skeletonPipelineFilter .card {
+  padding: 10px;
+  border: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+}
+.skeletonPipelineFilter .card-header {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+}
+.detailView span {
+  display: block;
+  width: 276px;
+  height: 13px;
+  margin: 0 auto;
+}
+.skeletonPipelineHealth {
+  list-style: none;
+  padding: 10px 25px 0px;
+  margin: 0;
+}
+.skeletonPipelineHealth li {
+  position: relative;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.card-body.pipelineNavBody .noDataOuter {
+  height: 150px;
+  overflow: hidden;
+}
+.card-body.pipelineNavBody .noDataOuter.noDataMidOuter{
+  height: auto;
+}
+.card-body.pipelineNavBody .pipelineStructure {
+  margin: 0;
+}
+/* analyst dashboard fullview end  */
+
+/* pipelineList skeleton css start  */
+.noDataOuter .pipeLineSummaryList {
+  padding: 10px 10px 10px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.pipeLineSummaryList .pipelineIcon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.pipelineIcon div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--skeletonColor);
+  margin-right: 10px;
+}
+.pipeLineSummaryList .pipelineDetail {
+  width: 100%;
+  height: 30px;
+  background-color: var(--skeletonColor);
+}
+/* pipelineList skeleton css end  */
+
+/* form skeleton css start  */
+.formView{
+  width: 95%;
+  margin: 0 auto;
+  padding: 40px 60px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.formView h5{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.formView h5 span{
+  height: 18px;
+  width: 100px;
+}
+.rowView{
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.rowView:last-child{
+  margin-bottom: 0;
+}
+.rowView .formLabel{
+  position: relative;
+  flex: 0 0 20%;
+  max-width: 20%;
+  text-align: right;
+  padding: 10px 20px 0 0;
+}
+.formLabel h5{
+  width: 150px;
+  height: 13px;
+  margin: 0;
+}
+.rowView .formInput{
+  position: relative;
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.formInput > div {
+  width: 100%;
+  height: 33.5px;
+  background-color: var(--skeletonColor);
+}
+.rowView .skeletonButton{
+  border-radius: 34px;
+  height: 44.44px;
+  width: 95px;
+}
+.uploadFileBox{
+  padding-right: 220px;
+  position: relative;
+}
+.uploadFileBox .fileBox{
+  padding: 50px 30px;
+  border: 2px dashed var(--borderColor);
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.fileContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fileContent > div{
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: var(--skeletonColor);
+  margin-bottom: 10px;
+}
+.fileContent p{
+  margin: 0;
+  height: 14px;
+  width: 200px;
+}
+.previewBox .fileContent p{
+  width: 100px;
+}
+.uploadFileBox .previewBox{
+  width: 200px;
+  border: 2px solid var(--borderColor);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rowView .nestedForm{
+  border-radius: 5px;
+}
+.nestedForm .card-header{
+  position: relative;
+  border-bottom: 1px solid var(--borderColor);
+  padding: 10px 15px;
+  background: white;
+}
+.nestedForm .card-header::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 2px;
+  width: 5px;
+  border-radius: 5px;
+  background-color: var(--borderDarkColor);
+}
+.nestedForm .card-header h4{
+  display: inline-block;
+  margin: 0;
+  width: 100px;
+  height: 13px;
+  vertical-align: middle;
+}
+/* form skeleton css end  */
+
+/* settings page skeleton CSS start  */
+.settingsView .settingsTab{
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.settingsTab li{
+  position: relative;
+  margin-bottom: -1px;
+  flex: 1;
+  padding-right: 4px;
+} 
+.settingsTab li > div{
+  border-radius: 5px 5px 0 0;
+  height: 36.44px;
+  border: 1px solid var(--borderColor);
+  background-color: var(--white);
+  text-align: center;
+}
+.settingsTab li:last-child{
+  padding-right: 0;
+}
+.settingsTab li:first-child > div{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.settingsTab li span{
+  width: 100px;
+  height: 13px;
+  margin: 10px 0;
+}
+.settingsView .settingsContent{
+  padding: 10px;
+  border: 1px solid var(--borderColor);
+  border-top: none;
+}
+.settingsContent .btn-update{
+  text-align: center;
+  position: relative;
+}
+.btn-update .skeletonButton{
+  border-radius: 34px;
+  height: 44.44px;
+  width: 200px;
+}
+/* settings page skeleton CSS end  */
+
+/* manage Role Navigation CSS start  */
+.roleNavigation{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.roleNavigation li{
+  position: relative;
+  background-color: var(--white);
+  padding: 10px 10px 10px 50px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  height: 50.67px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.roleNavigation li:last-child{
+  margin-bottom: 0;
+}
+.roleNavigation label{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: var(--skeletonColor);
+  margin-right: 10px;
+  margin: 0;
+  border-radius: 4px;
+}
+.roleNavigation p{
+  width: 150px;
+  height: 13px;
+  margin: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* manage Role Navigation CSS end  */
+
+/* Account Settings page CSS start  */
+.profileCard{
+  position: relative;
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profileHeader span{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profileHeader h6{
+  margin-bottom: 5px;
+  width: 100px;
+  height: 13px;
+
+}
+.profileHeader p{
+  margin-bottom: 0px;
+  width: 50px;
+  height: 13px;
+}
+.tab-pane .noDataOuter{
+  overflow: hidden;
+}
+/* Account Settings page CSS end  */
+
+/* Settings Unit page CSS start  */
+.unitCards .card-header span{
+  width: 100px;
+  height: 13px;
+  vertical-align: middle;
+}
+.unitCards .unitBody{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.unitBody span{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.unitBody h6{
+  margin: 0 0 0 5px;
+  width: 20px;
+  height: 13px;
+}
+/* Settings Unit page CSS end  */
+
+/* Settings Pipeline Config CSS Start  */
+.configCards{
+  position: relative;
+  margin-bottom: 20px;
+}
+.configCards:last-child{
+  margin-bottom: 0px;
+}
+.configCards .card-header{
+  position: relative;
+  border-bottom: 0;
+  padding-left: 30px;
+}
+.configCards .card-header span{
+  width: 100px;
+  height: 14px;
+  vertical-align: middle;
+}
+.configCards .card-header .skeletonButton{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* Settings Pipeline Config CSS End  */
+
+/* Settings Licence Tab CSS start */
+.skeletonLicence {
+  position: relative;
+}
+.skeletonLicence .idSkeleton{
+  position: relative;
+  margin-bottom: 40px;
+  padding: 10px 40px 10px 20px;
+  border: 2px dashed var(--borderColor);
+  border-radius: 4px;
+  width: 65%;
+}
+.idSkeleton h4{
+  margin: 0;
+  width: 100%;
+  height: 13px;
+}
+.skeletonPlan h5{
+  position: relative;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 13px;
+  border-radius: 4px;
+  background-color: var(--skeletonColor);
+}
+.skeletonPlan ul{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skeletonPlan ul li{
+  position: relative;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid var(--borderColor);
+}
+.skeletonPlan li span{
+  width: 80px;
+  height: 13px;
+}
+.skeletonLicenceCard{
+  position: relative;
+  padding: 30px 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skeletonLicenceCard h4, .skeletonLicenceCard span, .skeletonLicenceCard h6{
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  background-color: var(--skeletonColor);
+}
+.skeletonLicenceCard h4{
+  width: 80px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+.skeletonLicenceCard span{
+  width: 150px;
+  height: 22px;
+  margin-bottom: 20px;
+}
+.skeletonLicenceCard h6{
+  width: 200px;
+  height: 13px;
+}
+/* Settings Licence Tab CSS end */
+
+/* licence plan page css start  */
+.licenceLoader{
+  position: relative;
+}
+.skeletonHeader{
+  position: relative;
+  padding: 30px 15px;
+  margin: 0 0 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--borderColor);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+.skeletonHeader .skeletonInstructions{
+  position: relative;
+  padding: 0px 0px 0px 150px;
+}
+.skeletonInstructions span{
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 120px;
+  height: 90px;
+}
+.skeletonInstructions h6, .skeletonContact h6{
+  margin-bottom: 15px;
+}
+.skeletonInstructions h6{
+  width: 200px;
+  height: 13px;
+}
+.skeletonInstructions ul, .skeletonContact ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.skeletonInstructions li, .skeletonContact li{
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: var(--skeletonColor);
+}
+.skeletonInstructions li{
+  width: 100px;
+  height: 12px;
+}
+.skeletonContact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.skeletonContact h6{
+  width: 70px;
+  height: 13px;
+  text-align: right;
+}
+.skeletonContact li{
+  width: 80px;
+  height: 13px;
+  text-align: right;
+}
+.skeletonAttribute{
+  position: relative;
+  padding: 20px;
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  background-color: var(--white);
+  height: 100%;
+}
+.skeletonAttribute h3{
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 0 0 15px 0px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.skeletonAttribute h3 span{
+  width: 100px;
+  height: 16px;
+}
+.skeletonAttribute ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.skeletonAttribute li{
+  position: relative;
+  margin-bottom: 20px;
+}
+.skeletonAttribute li:last-child{
+  margin-bottom: 0;
+}
+.skeletonAttribute li h5{
+  width: 80px;
+  height: 13px;
+}
+.skeletonAttribute li h6{
+  width: 50px;
+  height: 13px;
+}
+.skeletonTitle{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.skeletonTitle h3 span{
+  width: 80px;
+  height: 18px;
+} 
+.skeletonTitle p span{
+  width: 300px;
+  height: 13px;
+}
+.skeletonPlanCard {
+  position: relative;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.skeletonPlanCard li{
+  position: relative;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.planCardBody h6 {
+  margin-bottom: 20px;
+}
+.planCardBody span{
+  width: 100px;
+  height: 13px;
+}
+.planCardBody ul{
+  position: relative;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+.planCardBody li{
+  position: relative;
+  box-shadow: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.planCardBody li h6{
+  margin: 0 0 0 10px;
+  width: 150px;
+  height: 13px;
+}
+.planCardBody li span{
+  width: 20px;
+  height: 20px;
+}
+/* licence plan page css end  */
+
+/* alarmDetailModal skeleton CSS start  */
+.breadCrumbSkeleton{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.breadCrumbSkeleton p{
+  display: inline-block;
+  width: 100px;
+  height: 17px;
+  margin: 0;
+}
+.ancestorSkeleton{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.ancestorSkeleton h6, .historySkeleton h6{
+  position: relative;
+  display: inline-block;
+  height: 17px;
+  background-color: var(--skeletonColor);
+  margin: 0 10px 0 0;
+}
+.ancestorSkeleton h6{
+  width: 50px;
+}
+.historySkeleton h6{
+  width: 200px;
+}
+.ancestorSkeleton p{
+  width: 150px;
+  height: 17px;
+  margin: 0 10px 0 0;
+}
+.historySkeleton{
+  margin-bottom: 20px;
+}
+.modal-body.modalMinHeight .noDataOuter.noDataMidOuter{
+  height: auto;
+}
+.alarmDetailGraph .chartOuter{
+  border: 0;
+}
+/* alarmDetailModal skeleton CSS end  */
+
+/* compare configuration skeleton CSS start  */
+.configSkeleton{
+  position: relative;
+  padding: 25px;
+}
+.configSkeleton::before, .configSkeleton::after{
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  color: var(--textColor);
+}
+.configSkeleton::before{
+  content: "{";
+  top: 0;
+}
+.configSkeleton::after{
+  content: "}";
+}
+.configSkeleton p{
+  display: inline-block;
+  width: 50px;
+  height: 13px;
+  margin: 0 10px 0 0;
+}
+.configSkeleton h6{
+  height: 13px;
+  margin: 0;
+}
+.configSkeleton div:nth-child(odd) h6{
+  width: 150px;
+}
+.configSkeleton div:nth-child(even) h6{
+  width: 80px;
+}
+.configSkeleton div:nth-child(3) h6, .configSkeleton div:nth-child(7) h6{
+  width: 200px !important;
+}
+/* compare configuration skeleton CSS end  */

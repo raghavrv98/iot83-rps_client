@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< AddOrEditZone /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      AddOrEditZone
+    </title>
+    <meta
+      content="Description of AddOrEditZone"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage EHT Zone"
+            id="app.common.messages.manageZone"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Update Zone"
+          id="app.containers.AddOrEditZone.updateZone"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+  </div>
+  <SkeletonLoader
+    mode="fullView"
+    skeleton="skeletonNestedFormUpload"
+  />
+</div>
+`;

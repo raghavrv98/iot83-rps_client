@@ -1,0 +1,289 @@
+.headerBg {
+    height: 500px;
+    background-image: url("../images/nVent-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgLayout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.headerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.headerText h3 {
+    font-size: 38px;
+}
+
+.contentText {
+    color: #4a4a4a;
+    font-size: 15px;
+    letter-spacing: .02em;
+}
+
+.contentBox {
+    margin: 80px auto 30px;
+}
+
+.nVentLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.nVentLogo img {
+    height: 100%;
+}
+
+.customCard {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    padding: 20px 100px;
+    transition: ease 300ms;
+}
+
+.cardHeader {
+    position: relative;
+}
+
+.cardHeader h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #c4262e;
+    padding: 0 10px 6px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cardHeader h4::before {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background-color: #c4262e;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cardBody {
+    height: 150px;
+}
+
+.cardBody p {
+    text-align: center;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-bottom: 0;
+}
+
+.icon {
+    padding: 20px 10px;
+}
+
+.icon i {
+    font-size: 40px;
+    color: #f2554f;
+}
+
+.customCard:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    border-color: transparent;
+    transform: translateY(-5px);
+    transition: ease 300ms;
+    background-color: #f2554f;
+    transition: ease 300ms;
+}
+
+.customCard:hover .cardHeader h4,
+.customCard:hover .cardBody p,
+.customCard:hover .icon i {
+    transition: ease 300ms;
+    color: #ffff;
+}
+
+.customCard:hover h4::before {
+    background-color: #ffff;
+}
+
+.title {
+    position: relative;
+}
+
+.title h2 {
+    text-align: center;
+    color: #121212;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title .lineLeft,
+.title .lineRight {
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 55px;
+    background-color: #f2554f;
+}
+
+.title .lineLeft {
+    left: 50%;
+    transform: translateX(calc(-100% - 20px));
+}
+
+.title .lineRight {
+    right: 50%;
+    transform: translateX(calc(100% + 20px));
+}
+
+.title .lineLeft::after,
+.title .lineRight::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #f2554f;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.title .lineLeft::after {
+    left: 100%;
+}
+
+.title .lineRight::before {
+    right: 100%;
+}
+
+.detailBlock {
+    background-color: #121212;
+    padding: 30px;
+}
+
+.detailBlock p {
+    color: #9c9c9c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contactDetails p{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 9px;
+}
+
+.contactDetails p i{
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+
+.footerIcon {
+    height: 60px;
+    width: 60px;
+}
+
+.footerIcon img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333132;
+    color: #ffff;
+    font-family: 'PT Sans', sans-serif;
+    padding: 8px;
+}
+
+.footer p {
+    color: #ffff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+/* Custom Style CSS Start */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.fx-b50 {
+    flex-basis: 50% !important;
+    max-width: 50% !important;
+}
+
+.fx-b25 {
+    flex-basis: 25% !important;
+    max-width: 25% !important;
+}
+
+.fx-b65 {
+    flex-basis: 65% !important;
+    max-width: 65% !important;
+}
+
+.pd-r-20 {
+    padding-right: 20px;
+}
+
+.pd-r-40 {
+    padding-right: 20px;
+}
+
+.pd-l-20 {
+    padding-left: 20px;
+}
+
+.mr-b-40 {
+    margin-bottom: 40px;
+}
+
+.f-12 {
+    font-size: 12px !important;
+}
+
+/* Custom Style CSS End */

@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideNav /> for verified user match snapshots 1`] = `
+<header
+  className="appHeader"
+>
+  <nav
+    className="navbar navbar-expand-lg"
+  >
+    <a
+      className="navbar-brand"
+    >
+      <img
+        onError={[Function]}
+        src="undefinedapi/public/static/logo/pmmp.jpeg"
+      />
+    </a>
+    <button
+      aria-controls="navBarMob"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler text-light"
+      data-target="#navBarMob"
+      data-toggle="collapse"
+      type="button"
+    >
+      <i
+        className="fas fa-bars"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse navbar-mob animated fadeInDown"
+      id="navBarMob"
+    >
+      <ul
+        className="navbar-nav"
+      />
+    </div>
+  </nav>
+  <ul
+    className="appInfo"
+  >
+    <li
+      className="userInfo userInfo-lg"
+    >
+      <p>
+        <FormattedMessage
+          defaultMessage="Welcome !"
+          id="app.components.SideNav.welcome"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <strong>
+          Admin
+        </strong>
+      </p>
+      <h6>
+        ( 
+         )
+      </h6>
+    </li>
+    <li>
+      <div
+        className="LanguageSelected"
+      >
+        <span>
+          EN
+        </span>
+      </div>
+    </li>
+    <li
+      className="options"
+    >
+      <div
+        className="dropdown"
+      >
+        <button
+          className="btn dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          <i
+            className="fal fa-cogs text-white"
+          />
+        </button>
+        <div
+          className="dropdown-menu animated rotateInUpRight"
+        >
+          <div
+            className="dropdown-item userInfo userInfo-md"
+          >
+            <p>
+              <FormattedMessage
+                defaultMessage="Welcome !"
+                id="app.components.SideNav.welcome"
+                values={Object {}}
+              >
+                <Component />
+              </FormattedMessage>
+               
+              <strong>
+                Admin
+              </strong>
+            </p>
+            <h6>
+              ( 
+               )
+            </h6>
+          </div>
+          <div
+            className="dropdown-item"
+            id="changePassword"
+            onClick={[Function]}
+          >
+            <FormattedMessage
+              defaultMessage="Change Password"
+              id="app.components.SideNav.changePassword"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </div>
+          <div
+            className="dropdown-item"
+            id="settings"
+            onClick={[Function]}
+          >
+            <FormattedMessage
+              defaultMessage="Settings"
+              id="app.common.messages.settings"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </div>
+          <div
+            className="dropdown-item"
+            id="workingSkeletonDemo"
+            onClick={[Function]}
+          >
+            <FormattedMessage
+              defaultMessage="Manage Password Request"
+              id="app.components.SideNav.managePasswordRequest"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </div>
+          <div
+            className="dropdown-item"
+            onClick={[Function]}
+          >
+            <FormattedMessage
+              defaultMessage="Logout"
+              id="app.components.SideNav.logout"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</header>
+`;

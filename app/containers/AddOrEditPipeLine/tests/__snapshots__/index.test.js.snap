@@ -1,0 +1,680 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddOrEditPipeLine /> match snapshots 1`] = `
+<div
+  className="appContent"
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      AddOrEditPipeLine
+    </title>
+    <meta
+      content="Description of AddOrEditPipeLine"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div
+    className="pageBreadcrumb"
+  >
+    <div
+      className="flex-item fx-b70"
+    >
+      <p
+        className="pd-l-30"
+      >
+        <span
+          className="cursor-pointer"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-transparent"
+          >
+            <i
+              className="far fa-long-arrow-left"
+            />
+          </button>
+          <FormattedMessage
+            defaultMessage="Manage Pipelines"
+            id="app.common.messages.managePipeline"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </span>
+      </p>
+      <h5>
+        <FormattedMessage
+          defaultMessage="Create Pipeline"
+          id="app.containers.AddOrEditPipeLine.addnewpipeline"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </h5>
+    </div>
+  </div>
+  <form
+    className="contentForm"
+    onSubmit={[Function]}
+  >
+    <h5
+      className="formHeader"
+    >
+      <FormattedMessage
+        defaultMessage="Create Pipeline"
+        id="app.containers.AddOrEditPipeLine.addnewpipeline"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+      <div
+        className="headerItemRight"
+      >
+        <div
+          className="switchButtonLabel"
+        >
+          <label
+            className="switchLabelText"
+          >
+            <FormattedMessage
+              defaultMessage="Generate Report"
+              id="app.containers.AddOrEditPipeLine.generateReport"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+             :
+          </label>
+          <label
+            className="switchLabel"
+          >
+            <input
+              checked={false}
+              id="generateReport"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="switchMark"
+            />
+          </label>
+        </div>
+      </div>
+    </h5>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Pipeline Name:"
+          id="app.containers.AddOrEditPipeLine.pipelinename"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        autoFocus={true}
+        className="form-control"
+        id="name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Process Fluid"
+          id="app.common.messages.processfluid"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        :
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        className="form-control"
+        id="processFluid"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Hot HH Limit"
+          id="app.common.messages.hotHHLimit"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="Hot_HH_Limit"
+          max="250.0"
+          min="0"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ℃
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Cold LL Limit"
+          id="app.common.messages.coldLLLimit"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="Cold_LL_Limit"
+          max="250.0"
+          min="-120.0"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ℃
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Max Alarm Distance"
+          id="app.common.messages.maxAlarmDistance"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="maxAlarmDistance"
+          min="1"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            <FormattedMessage
+              defaultMessage="m"
+              id="app.common.messages.m"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Freeze Band Low Limit"
+          id="app.common.messages.freezeBandLowLimit"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="FreezeBandLowLimit"
+          max="250.0"
+          min="-120.0"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ℃
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Freeze Temperature"
+          id="app.common.messages.freezeTemperature"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="Freeze_Temperature"
+          max="250.0"
+          min="-120.0"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ℃
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Freeze Band High Limit"
+          id="app.common.messages.freezeBandHighLimit"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="FreezeBandHighLimit"
+          max="250.0"
+          min="-120.0"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ℃
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group position-relative"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Time To Freeze LL Limit"
+          id="app.common.messages.timeToFreezeLLLimit"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="TimeToFreeze_LL_Limit"
+          max="16.0"
+          min="2.0"
+          onChange={[Function]}
+          required={true}
+          step="any"
+          type="number"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            <FormattedMessage
+              defaultMessage="Hours"
+              id="app.common.messages.hours"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Anchor Shift Threshold"
+          id="app.containers.AddOrEditPipeLine.anchorShiftThreshold"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <input
+        className="form-control"
+        id="anchorShiftThreshold"
+        onChange={[Function]}
+        required={true}
+        step="any"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Geometry:"
+          id="app.containers.AddOrEditPipeLine.geometry"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+        <sup
+          className="mr-r-7"
+        >
+          <i
+            className="fas fa-asterisk"
+          />
+        </sup>
+        :
+      </label>
+      <textarea
+        className="form-control"
+        id="overallGeometry"
+        onChange={[Function]}
+        required={true}
+        rows="3"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        <FormattedMessage
+          defaultMessage="Other Info:"
+          id="app.containers.AddOrEditPipeLine.otherinfo"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </label>
+      <textarea
+        className="form-control"
+        id="other"
+        onChange={[Function]}
+        rows="3"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="flex"
+    >
+      <div
+        className="fx-b20"
+      />
+      <div
+        className="fx-b80"
+      >
+        <p
+          className="note"
+        >
+          <span
+            className="noteText"
+          >
+             
+            <FormattedMessage
+              defaultMessage="Note"
+              id="app.common.messages.note"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+             : 
+          </span>
+          <b>
+            <FormattedMessage
+              defaultMessage="Cold LL Limit should be smaller than Hot HH Limit"
+              id="app.containers.AddOrEditPipeLine.note1Bold"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </b>
+           
+          <FormattedMessage
+            defaultMessage="( Cold LL Limit should be between -121 and 251 and Hot HH Limit should be between -1 and 251 )."
+            id="app.containers.AddOrEditPipeLine.note1"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </p>
+        <p
+          className="note pd-l-40"
+        >
+          <b>
+            <FormattedMessage
+              defaultMessage="Freeze Band Low Limit should be less than Freeze Temperature"
+              id="app.containers.AddOrEditPipeLine.note2Bold"
+              values={Object {}}
+            >
+              <Component />
+            </FormattedMessage>
+          </b>
+           
+          <FormattedMessage
+            defaultMessage="( Freeze Temperature should be between -121 and 251 and Time To Freeze LL Limit should be between 1 and 17 )."
+            id="app.containers.AddOrEditPipeLine.note2"
+            values={Object {}}
+          >
+            <Component />
+          </FormattedMessage>
+        </p>
+      </div>
+    </div>
+    <div
+      className="form-group justify-content-end mt-3"
+    >
+      <button
+        className="btn btn-danger"
+        id="savePipeline"
+        type="submit"
+      >
+        <i
+          className="far fa-check-circle"
+        />
+        <FormattedMessage
+          defaultMessage="Save"
+          id="app.common.messages.save"
+          values={Object {}}
+        >
+          <Component />
+        </FormattedMessage>
+      </button>
+    </div>
+  </form>
+</div>
+`;

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`< MessageModal /> match snapshots 1`] = `
+<div
+  className="modal fade show d-block"
+  id="modal"
+>
+  <div
+    className="modal-dialog"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-body p-4 pd-t-30"
+      >
+        <span
+          className="close"
+          onClick={[Function]}
+        >
+          <i
+            className="far fa-times"
+          />
+        </span>
+        <h5
+          className="text-center mb-5"
+        />
+        <div
+          className="text-right"
+        >
+          <button
+            className="btn btn-danger"
+            data-dismiss="modal"
+            onClick={[Function]}
+            type="button"
+          >
+            <FormattedMessage
+              defaultMessage="Confirm"
+              id="app.common.messages.confirmButton"
+              values={Object {}}
+            />
+          </button>
+          <button
+            className="btn btn-secondary mr-l-10"
+            data-dismiss="modal"
+            onClick={[Function]}
+            type="button"
+          >
+            <FormattedMessage
+              defaultMessage="Cancel"
+              id="app.common.messages.cancelButton"
+              values={Object {}}
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

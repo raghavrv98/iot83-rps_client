@@ -1,0 +1,275 @@
+@media only screen {
+    .appHeader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--primaryColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+        z-index: 1030;
+    }
+    .appHeader .navbar {
+        padding: 0px;
+    }
+    .appHeader .navbar-brand {
+        width: 300px;
+        height: 150px;
+        padding: 2px 15px;
+        margin-right: 5px;
+        background-color: var(--black);
+    }
+    .appHeader .navbar-brand img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .appHeader .navbar-nav {
+        flex-wrap: wrap;
+    }
+    .appHeader .navbar-nav .nav-item {
+        margin: 0 2px;
+    }
+    .appHeader .navbar-nav .nav-item .nav-link {
+        color: var(--navigationMenuText);
+        padding: 15px 10px;
+        font-size: 16px;
+        border-bottom: 5px solid transparent;
+    }
+    .appHeader .navbar-nav .nav-item .nav-link:hover {
+        color: var(--navigationMenuTextHover);
+    }
+    .appHeader .navbar-nav .nav-item.active .nav-link {
+        border-bottom-color: var(--secondaryColor);
+        color: var(--navigationMenuTextHover);
+    }
+    .appHeader .navbar-nav .nav-item .nav-link i {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .nav-subItem:hover .dropdown-menu {
+        display: block;
+        min-width: 170px;
+        margin: 0;
+        border-radius: 6px;
+        border-color: var(--borderColor);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-subItem .dropdown-menu .dropdown-item {
+        padding: 0;
+    }
+    .nav-subItem .dropdown-menu .dropdown-item:active {
+        background-color: transparent;
+    }
+    .nav-subItem .dropdown-menu .dropdown-item a {
+        display: block;
+        padding: 8px 24px;
+        color: var(--contentColor);
+        font-size: 13px;
+    }
+    .nav-subItem .dropdown-menu .dropdown-item:hover a {
+        color: var(--secondaryColor);
+        cursor: pointer;
+    }
+    .appInfo {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .appInfo>li {
+        position: relative;
+        padding: 0px 10px 0px 0px;
+    }
+    .appInfo>li::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 30px;
+        display: inline-block;
+        background-color: var(--borderColor);
+    }
+    .appInfo>li:last-child {
+        border-right: none;
+        padding: 0px 5px 0px 0px;
+    }
+    .appInfo>li:last-child::before {
+        display: none;
+    }
+    .appInfo .userInfo p, .appInfo .userInfo h6 {
+        margin-bottom: 3px;
+        padding: 0px;
+        color: var(--navigationMenuText);
+        font-size: 13px;
+        font-weight: 600;
+        text-align: right;
+    }
+    .appInfo .userInfo p strong {
+        color: var(--secondaryColor);
+        margin-left: 6px;
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .appInfo .userInfo h6 {
+        margin: 0;
+    }
+    .appInfo .dropdown .btn i {
+        font-size: 16px;
+    }
+    .appInfo .dropdown .btn::after {
+        display: none;
+    }
+    .appInfo .dropdown .dropdown-menu {
+        border-radius: 6px;
+    }
+    .appInfo .dropdown-menu {
+        top: calc(100% + 10px) !important;
+        right: 10px !important;
+        transform: translateX(6%) !important;
+        left: unset !important;
+    }
+    .appInfo .dropdown-menu .dropdown-item:active {
+        background-color: transparent;
+    }
+    .appInfo .options .dropdown-menu .dropdown-item {
+        padding: 8px 24px;
+        font-size: 12px;
+        color: var(--contentColor);
+    }
+    .appInfo .options .dropdown-menu .dropdown-item:hover {
+        color: var(--secondaryColor);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .languageSelector {
+        min-width: 700px;
+    }
+    .languageSelector::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        right: 6%;
+        height: 14px;
+        width: 14px;
+        background-color: var(--white);
+        border-top: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        transform: rotate(-45deg);
+    }
+    .languageSelector h4 {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: var(--contentColor);
+    }
+    .languageSelector .continentList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .languageSelector .continentList>li {
+        flex: 1;
+        padding: 10px;
+    }
+    .continentList h5 {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--contectColor);
+        letter-spacing: 1px;
+    }
+    .continentList ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .continentList ol li {
+        position: relative;
+        padding: 10px 10px 10px 35px;
+        cursor: pointer;
+    }
+    .continentList ol h6 {
+        font-size: 12px;
+        color: var(--contentColor);
+        font-weight: 400;
+        margin: 0;
+    }
+    .continentList ol p {
+        margin: 0;
+        color: var(--textColor);
+    }
+    .continentList ol li:hover p {
+        color: var(--secondaryColor);
+        text-decoration: underline;
+    }
+    .continentList ol li img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        border-radius: 50%;
+        border: 1px solid var(--borderColor);
+    }
+    .continentList ol li.disabled {
+        cursor: not-allowed;
+        color: var(--borderColor) !important;
+    }
+    .continentList ol li.disabled p, .continentList ol li.disabled h6 {
+        color: var(--borderColor);
+    }
+    .continentList ol li.disabled:hover p {
+        text-decoration: none;
+        color: var(--borderColor);
+    }
+    .pageBreadcrumb {
+        position: sticky;
+        top: 54px;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        z-index: 4;
+        margin: 0 -20px 15px;
+        padding: 12px 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .pageBreadcrumb p {
+        color: var(--pageSubHeadingColor);
+        margin: 0 0 6px;
+        font-size: 13px;
+        position: relative;
+    }
+    .pageBreadcrumb p .btn-transparent {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pageBreadcrumb h5 {
+        color: var(--pageHeadingColor);
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .pageBreadcrumb h5 span {
+        position: relative;
+        display: inline-block;
+    }
+}
